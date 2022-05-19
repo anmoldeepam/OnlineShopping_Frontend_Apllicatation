@@ -1,0 +1,17 @@
+
+
+.Search-Bar{
+    background-color: blue;
+}
+.searchInput{
+    padding: 10px;
+    
+}
+#GlobalSearch{
+    width: 200px; 
+    border-radius: 8px;
+    margin-left: 20px;
+}
+.SearchButton{
+    padding-top: 10px;
+}

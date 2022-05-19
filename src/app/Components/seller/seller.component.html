@@ -1,0 +1,54 @@
+<div  class="conatainer">
+  <div class="row">
+<div class="col-md-4 address">
+Address
+</div>
+    <div class="orderNo col-md-8">
+        Order
+    </div>
+</div>
+
+<div *ngIf="!NoOrdersFlag"  class="conditionForShow">
+    <div  *ngFor="let product of products" class="row">
+        
+        <div  class="col-md-4 d-flex align-items-center justify-content-center">
+            
+            <div class="card " style="width: 18rem;">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Anmol Deep</h5>
+                  <p class="card-text">
+                      39, Mochi Colony<br>
+                      PLD Bank<br>
+                      Shimoga Road<br>
+                      Harihar<br>
+                      Davangere 577601<br>
+                </p>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-8">
+      
+            <div class="card mb-3" style="max-width: 700px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="{{product.image}}" style="width: 200px;height: 200px;" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="card-title">{{product.name}}</h2>
+                      <div class="card-text PriceAndsize">Product Price : <span style="font-weight: 700px;color: blue;">{{product.price}}</span></div>
+                      <div class="card-text PriceAndsize">Product Size Ordered : <span style="font-weight: 700px;color: blue;">{{product.sizeAvailed}}</span></div>
+                      <p class="card-text">{{product.details}}</p>
+                      <button class="btn btn-info" >Order Sent</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="NoOrdersFlag">
+    {{NoOrders}}
+</div>

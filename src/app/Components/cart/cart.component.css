@@ -1,0 +1,65 @@
+body{
+    background-color: grey;
+}
+.container{
+    margin-top: 50px;
+}
+.cartheading{
+    margin-left: 20px;
+}
+.card:hover{
+    width: 100%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    
+}
+.img{
+    height: 30px;
+}
+.cart-total{
+    
+    position: absolute;
+    left :px;
+    top:120px
+}
+
+.PriceDetails{
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.card-text{
+    font-size: large;
+    
+    justify-content: start;
+    
+}
+.pricespan{
+    font-size: larger;
+    
+    justify-content: flex-end;
+}
+.cartPrice{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: flex-start;
+    
+}
+.PlaceOrderButton{
+text-align: center;
+}
+
+.productSize{
+    width: 50px;
+    border: 2px solid grey;
+    padding: 3px;
+    margin: 0px 8px 0px 8px;
+    
+}
+
+.productSize:focus{
+    background-color: white;
+    border: 2px solid black;
+    margin: 0px 8px 0px 8px;
+}

@@ -1,0 +1,203 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "CartProduct": [
+    {
+      "id": 0,
+      "userId": "",
+      "userAddress": "",
+      "size": ""
+    }
+  ],
+  "seller": [
+    {
+      "id": 1,
+      "sellerName": "Puma Sports India Pvt LTD",
+      "email": "Puma@gmail.com",
+      "password": "Puma",
+      "products": [
+        1
+      ],
+      "sellerorder": [
+        {
+          "id": 1,
+          "image": "../../../assets/Resourses/Image/T-Shirts/Puma_White/b9da8153-5d5c-4a04-a98e-e97c12f567241632916946251Tshirts1.webp",
+          "name": "Puma TShirt",
+          "price": 500,
+          "discount": 10,
+          "description": "Men White & Grey Graphic Printed T-shirt",
+          "size": [
+            "XS",
+            "S",
+            "M"
+          ],
+          "sizeAvailed": "XL",
+          "sellerId": 1,
+          "sellerName": "Puma Sports India Pvt LTD",
+          "details": "White and grey Tshirt for men Graphic printed Regular length Round neck Short regular sleeves Knitted cotton fabric",
+          "reviews": "4.3"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "sellerName": "OmniTech Retail",
+      "email": "OmniTech@gmail.com",
+      "password": "OmniTech",
+      "products": [
+        2
+      ],
+      "sellerorder": [
+        {
+          "id": 2,
+          "image": "../../../assets/Resourses/Image/T-Shirts/HRX/Tshirt_1/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg",
+          "name": "HRX by Hrithik Roshan TShirt",
+          "price": 410,
+          "discount": 5,
+          "description": "Men Teal Blue Printed Pure Cotton T-shirt",
+          "size": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "sizeAvailed": "S",
+          "sellerId": 2,
+          "sellerName": "OmniTech Retail",
+          "details": "This season set a sporty fashion trend with the HRX Men's Athleisure T-shirt. This striped casual T-shirt can be worn on its own or layered under a jacket or a hoodie.",
+          "reviews": "4.1"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "sellerName": "Truenet Commerce",
+      "email": "TrueNet@gmail.com",
+      "password": "TrueNet",
+      "products": [
+        3
+      ],
+      "sellerorder": []
+    }
+  ],
+  "User": [
+    {
+      "id": 1,
+      "userName": "sam@gmail.com",
+      "userPassword": "sam",
+      "cart": [
+        "1",
+        "2"
+      ],
+      "address": "",
+      "sizeAvailed": ""
+    },
+    {
+      "id": 2,
+      "userName": "anmol@gmail.com",
+      "userPassword": "anmol",
+      "cart": [],
+      "address": "",
+      "sizeAvailed": ""
+    },
+    {
+      "id": 3
+    }
+  ],
+  "Product": [
+    {
+      "id": 1,
+      "image": "../../../assets/Resourses/Image/T-Shirts/Puma_White/b9da8153-5d5c-4a04-a98e-e97c12f567241632916946251Tshirts1.webp",
+      "name": "Puma TShirt",
+      "price": 500,
+      "discount": 10,
+      "description": "Men White & Grey Graphic Printed T-shirt",
+      "size": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "sizeAvailed": "",
+      "sellerId": 1,
+      "sellerName": "Puma Sports India Pvt LTD",
+      "details": "White and grey Tshirt for men Graphic printed Regular length Round neck Short regular sleeves Knitted cotton fabric",
+      "reviews": "4.3"
+    },
+    {
+      "id": 2,
+      "image": "../../../assets/Resourses/Image/T-Shirts/HRX/Tshirt_1/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg",
+      "name": "HRX by Hrithik Roshan TShirt",
+      "price": 410,
+      "discount": 5,
+      "description": "Men Teal Blue Printed Pure Cotton T-shirt",
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "sizeAvailed": "",
+      "sellerId": 2,
+      "sellerName": "OmniTech Retail",
+      "details": "This season set a sporty fashion trend with the HRX Men's Athleisure T-shirt. This striped casual T-shirt can be worn on its own or layered under a jacket or a hoodie.",
+      "reviews": "4.1"
+    },
+    {
+      "id": 3,
+      "image": "../../../assets/Resourses/Image/T-Shirts/Roadster/RoadsterShirt_1/6951be26-4632-4cbf-9817-1b57f0d958be1551949925418-Roadster-Men-Navy-Blue-Printed-Round-Neck-T-shirt-1471551949-4.webp",
+      "name": "Roadster TShirt",
+      "price": 174,
+      "discount": 10,
+      "description": "Men Navy Blue Varsity Printed Cotton T-shirt",
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "sizeAvailed": "",
+      "seller": "truenet Commerce",
+      "details": "Navy blue printed T-shirt, has a round neck, short sleeves",
+      "reviews": "4.5"
+    },
+    {
+      "id": 4,
+      "image": "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/4ff84b3f-96cc-4e3c-84e2-b6d5d13e06451548320874372-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-3.jpg",
+      "name": "HereAndNow TShirt",
+      "price": 580,
+      "discount": 15,
+      "description": "HERENOW Men Navy Polo Collar Cotton Pure Cotton T-shirt",
+      "size": [
+        "XS",
+        "S",
+        "XL",
+        "XXL"
+      ],
+      "sizeAvailed": "",
+      "sellerId": 3,
+      "sellerName": "truenet Commerce",
+      "details": "Navy blue solid T-shirt, has a polo collar, short sleeves",
+      "reviews": "3.9"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

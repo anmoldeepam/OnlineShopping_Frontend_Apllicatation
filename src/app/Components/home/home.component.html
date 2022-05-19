@@ -1,0 +1,138 @@
+<!-- <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+    aria-expanded="false">
+    Sort
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="Released">Released</a>
+    <a class="dropdown-item" href="Added"> Added</a>
+    <a class="dropdown-item" href="Created">Created</a>
+    <a class="dropdown-item" href="Updated">Updated</a>
+    <a class="dropdown-item" href="Reting">Reting</a>
+  </div>
+</div> -->
+
+
+<div class="conatainer">
+<div class="row">
+  <div class="col">
+    
+  
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../../assets/Hover_Image/1.png" class="d-block w-100" style="height: 200px;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../../../assets/Hover_Image/2.webp" class="d-block w-100" style="height: 200px;"  alt="IMage">
+      </div>
+      <div class="carousel-item">
+        <img src="../../../assets/Hover_Image/1.png" class="d-block w-100" style="height: 200px;"  alt="...">
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="row justify-content-center">
+    <div *ngFor="let product of products" id="CardColumn" class="col-md-3">
+      <div  class="card" style="width: 18rem;">
+        <img src="{{product.image}}" class="card-img-top" alt="GTA">
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+          <p class="card-text">{{product.description}}</p>
+          <button (click) = "OpenDetailsPage(product.id)" class="btn btn-primary">Details</button>
+          <button style="margin-left: 6px;" class="btn btn-warning" (click)="AddtoCart(product)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    {{username}}
+
+
+  </div>
+
+</div>
+</div>
+</div>
+
+<br />
+<br />
+<br />
+<footer >
+
+  <h2 class="info"> Company Name: The One-stop Shopping Destination</h2>
+  <p class="info">
+    E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in
+    search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses
+    everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile
+    accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like
+    sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs,
+    mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers,
+    mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay
+    assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in
+    your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.
+    <br />
+    <br />
+    What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find
+    yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when
+    there are multiple options available to you, well, the below will answer your question
+  </p>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-2">
+          <br>
+          <div style="color: grey;">ABOUT</div> <br>
+          <a href="ContactUs">Contact Us</a><br>
+          <a href="AboutUs">About Us</a><br>
+          <a href="Careers">Careers</a><br>
+          <a href="Wholesale">Wholesale</a><br>
+          <a href="CorparateInformation">Corparate Information</a><br><br>
+        </div>
+        <div class="col-2">
+          <br>
+          <div style="color: grey;">POLICY</div> <br>
+          <a href="ReturnPolicy">Return Policy</a><br>
+          <a href="TermOfUse">Term Of Use</a><br>
+          <a href="Security">Security</a><br>
+          <a href="SiteMap">SiteMap</a><br>
+          <a href="ERP Compliance">ERP Compliance</a><br><br>
+        </div>
+        <div class="col-2">
+          <br>
+          <div style="color: grey;">SOCIAL</div> <br>
+          <a href="FaceBook">FaceBook</a><br>
+          <a href="Twitter">Twitter</a><br>
+          <a href="Youtube">Youtube</a><br>
+          <br><br><br>
+        </div>
+        <div class="col-3">
+          <div style="color: grey;">Reach Us At</div> <br>
+          <p>
+            Company Internet Private Limited,
+            Buildings Alyssa, Begonia &
+            Clove Embassy Tech Village,
+            Outer Ring Road, Devarabeesanahalli Village,
+            Bengaluru, 560103,
+            Karnataka, India
+          </p>
+        </div>
+        <div class="col-3">
+          <div style="color: grey;">Registered Office At</div> <br>
+          <p>
+            Company Internet Private Limited,
+            Buildings Alyssa, Begonia &
+            Clove Embassy Tech Village,
+            Outer Ring Road, Devarabeesanahalli Village,
+            Bengaluru, 560103,
+            Karnataka, India
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

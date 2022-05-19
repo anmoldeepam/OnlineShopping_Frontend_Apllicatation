@@ -1,0 +1,65 @@
+<div class="container">
+    <h2 class="cartheading">Cart</h2>
+<div class="cart">
+    <div class="products">
+    <div *ngFor="let product of products" class="col-md-8">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{product.image}}" style="height: 200px;width: 200px;" class="img-fluid rounded-start"
+                        alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{product.name}}</h5>
+                        <div class="card-text " style="margin-bottom: 4px;">Seller : {{product.sellerName}}</div>
+                        <!-- Quantity &nbsp;&nbsp;
+                        <select name="Quantity" (click)="Quantity(product)"  id="product">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select> -->
+                        <!-- Size &nbsp;&nbsp;
+                        <select  name="size" [(ngModel)] = "prodSeleted" (ngModelChange)="selectSize($event, product)"  id="productSize">
+                            <option  *ngFor="let size of product.size; let i = index" [value]="product.size[i]">{{product.size[i]}}</option>
+                        </select> -->
+                       
+                        <div style="font-size: large;margin-bottom: 4px;">Size : {{product.sizeAvailed}}</div>
+                        <button class="productSize" (click)="SelectedSize(size,product)" *ngFor="let size of productSize" required>{{size}}</button>
+                    </div>
+                    <button class="btn btn-danger" (click)="RemoveItemFromCart(product.id)" style="margin-left: 20px;">Remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="cart-total" style="margin-left: 800px; ">
+    <div class="PriceDetails">PRICE DETAILS</div>
+    <br>
+    
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          
+          <div class="cartPrice">
+            <div class="card-text">Price :</div>
+             <span class="pricespan" >{{totalPrice}}</span>
+          </div>
+          <div class="cartPrice">
+            <div class="card-text">Delivery Charges :</div>
+             <span class="pricespan" >50</span>
+          </div>
+          <div class="cartPrice">
+            <div class="card-text">Total Amount :</div>
+             <span class="pricespan" >{{totalPriceAfterAddingDeliveryCharges}}</span>
+          </div>
+           <button (click)="PlaceOrder()" class="btn btn-primary d-flex justify-content-center">Place Order</button>
+        </div>
+      </div>
+      <br><br>
+      <i class="fa fa-cc-visa" style="font-size:24px"></i> &nbsp; 
+      Safe and Secure Payments. <br>
+      Easy returns.100% Authentic products
+</div>
+</div>

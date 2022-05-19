@@ -1,0 +1,17 @@
+.orderNo{
+    font-size: x-large;
+    text-align: center;
+    margin: 30px  0px;
+    font-weight: 900;
+    
+}
+.address{
+    font-size: x-large;
+    text-align: center;
+    margin: 30px  0px;
+    font-weight: 900;
+}
+.PriceAndsize{
+    font-size: larger;
+    margin-bottom: 5px;
+}

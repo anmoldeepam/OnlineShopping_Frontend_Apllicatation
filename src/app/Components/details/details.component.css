@@ -1,0 +1,68 @@
+div{
+    
+}
+
+.col-md-5 {
+    padding-top: 30px;
+}
+.col-md-7{
+    padding-top: 30px;
+}
+img{
+    width: 100%;
+     height: 400px;
+     
+}
+
+.BuyNowButton{
+    margin-top: 50px;
+    width: 45%  ;
+}
+
+.AddtoCartButton{
+    margin-top: 50px;
+    width: 45%  ;
+    margin-left: 30px;
+}
+.price{
+    font-size: xx-large;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.originalPrice{
+    margin: 10px 0px 10px 0px;
+}
+
+.ratings{
+    padding: 3px;
+    width: 30px;
+    color: white;
+    font-size: large;
+background-color: green;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+}
+
+.productSize{
+    width: 35px;
+    border: 2px solid grey;
+    padding: 5px;
+    margin: 0px 8px 0px 8px;
+    
+}
+
+.productSize:focus{
+    background-color: white;
+    border: 2px solid black;
+    margin: 0px 8px 0px 8px;
+}
+
+.seller .details{
+    margin-right: 20px;
+
+}
+.details{
+    font-size: larger;
+}
