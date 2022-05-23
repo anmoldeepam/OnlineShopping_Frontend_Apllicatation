@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { CartProduct } from '../Components/Model/CartProduct';
+import { category } from '../Components/Model/category';
 import { Product } from '../Components/Model/Product';
 import { Seller } from '../Components/Model/seller';
 
@@ -47,5 +48,14 @@ export class JsonServerService {
 
     putSeller(seller:Seller):Observable<any>{
       return this.http.put(`http://localhost:3000/seller/${seller.id}`,seller)
+    }
+
+    getCategory():Observable<any>{
+      return this.http.get(`http://localhost:3000/category`)
+    }
+
+    getCategoryById(id:any):Observable<category>{
+    
+      return this.http.get<category>(`http://localhost:3000/category/${id}`)
     }
 }

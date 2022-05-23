@@ -37,6 +37,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.jsonServer.getProducts().subscribe((product)=>{
     this.products=product
+    console.log(product)
     })
 
     
@@ -62,8 +63,9 @@ export class HomeComponent implements OnInit {
   AddtoCart(product:any){
 
    
-    
-    this.jsonServer.getUser(localStorage.getItem('userid')).subscribe((user:User)=>{
+    // OLD and NEW is down (Localstorage ot Session storage)
+    // this.jsonServer.getUser(localStorage.getItem('userid')).subscribe((user:User)=>{ 
+    this.jsonServer.getUser(sessionStorage.getItem('userid')).subscribe((user:User)=>{
      
       this.user=user
 
@@ -93,5 +95,8 @@ export class HomeComponent implements OnInit {
     this.router.navigateByUrl(`/details/${productId}`)
   }
  
+  TopOffer(){
+    this.router.navigateByUrl('/topoffer')
+  }
 
 }

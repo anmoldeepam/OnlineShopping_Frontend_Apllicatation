@@ -1,0 +1,49 @@
+
+<app-search-bar></app-search-bar>
+<!-- <div class="conatainer">
+    
+<div class="row justify-content-center">
+    <div *ngFor="let product of products" id="CardColumn" class="col-md-4 col-lg-3 col-sm-6 col-12">
+      <div (click) = "OpenDetailsPage(product.id)" class="card" style="width: 250px; height: 350px;">
+        <img src="{{product.image}}" class="card-img-top" alt="GTA">
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+          <div class="card-text Description">{{product.description}}</div>
+          <div class="card-text"><span class="ratings">{{product.reviews}}</span> Ratings</div>
+          <span class="card-text cardPrice"> <span style="font-size: larger;  ">Price : </span>{{product.price}}</span>
+          <span style="color: green; padding-left: 15px; font-size: large;">{{product.discount}}% Off</span>
+          
+        </div>
+      </div>
+    </div>
+</div>
+  </div> -->
+
+  <div class="conatainer">
+    <div class="row">
+      <div class="col">
+        
+      <div class="row justify-content-center">
+        <div *ngFor="let product of products" id="CardColumn" class="col-md-4 col-lg-3 col-sm-6 col-12">
+          <div (click) = "OpenDetailsPage(product.id)" class="card" style="width: 300px; height: auto;">
+            <img src="{{product.image}}" class="card-img-top" alt="GTA">
+            <div class="card-body">
+              <h5 class="card-title">{{product.name}}</h5>
+              <div class="card-text Description">{{product.description}}</div>
+              <div class="card-text"><span class="ratings">{{product.reviews}}</span> Ratings</div>
+              <span class="card-text cardPrice"> <span style="font-size: larger;  ">Price : </span>{{product.price}}</span>
+              <span style="color: green; padding-left: 15px; font-size: large;">{{product.discount}}% Off</span>
+              <!-- <button (click) = "OpenDetailsPage(product.id)" class="btn btn-primary">Details</button>
+              <button style="margin-left: 6px;" class="btn btn-warning" (click)="AddtoCart(product)">Add to Cart</button>
+             -->
+            </div>
+          </div>
+        </div>
+    
+      
+    
+      </div>
+    
+    </div>
+    </div>
+    </div>

@@ -16,10 +16,29 @@ export class DetailsComponent implements OnInit {
     ) { }
 
     value!:string
-    product!:Product
-    originalPrice!:any
+    product:Product={
+      id: 0,
+      image: '',
+      ExtraImages: [],
+      name: '',
+      price: 0,
+      discount: 0,
+      description: '',
+      offers: '',
+      size: [],
+      sizeAvailed: '',
+      sellerId: 0,
+      sellerName: '',
+      details: '',
+      reviews: '',
+      QandA: '',
+      cart: [],
+      categoryId: 0
+    }
+    offerPrice!:any
     productSize!:string[]
     user!:User
+    
 
   ngOnInit(): void {
   this.value=  this.activatedRoute.snapshot.params['id'];
@@ -28,9 +47,13 @@ export class DetailsComponent implements OnInit {
   this._jsonServerService.getProductById(this.value).subscribe((product:any)=>{
     this.product=product
 
-    this.originalPrice=((product.price / product.discount)+product.price).toFixed()
-
+    console.log(this.product.price*(this.product.discount/100))
+   // this.originalPrice=(((product.price / 100)*product.discount)+product.price).toFixed()
+   this.offerPrice =(this.product.price - (this.product.price*(this.product.discount/100))).toFixed()
+  
     this.productSize=product.size
+
+    
     
   })
   }
@@ -47,17 +70,20 @@ export class DetailsComponent implements OnInit {
       alert("Select a size")
     }
     console.log(this.product)
-    this._jsonServerService.getUser(localStorage.getItem('userid')).subscribe((user:User)=>{
-     
-      this.user=user
+    // OLD and NEW is down (Localstorage ot Session storage)
+    // this._jsonServerService.getUser(localStorage.getItem('userid')).subscribe((user:User)=>{
+      this._jsonServerService.getUser(sessionStorage.getItem('userid')).subscribe((user:User)=>{
 
-      
+      this.user=user
       this.user.cart.push(`${product.id}`)
-      
       this._jsonServerService.putUser(this.user).subscribe((message)=>{
         alert("Added To Cart Successfully")
       })
     })
+  }
+
+  ImageReplace(image:any){
+    this.product.image = image
   }
 
 }

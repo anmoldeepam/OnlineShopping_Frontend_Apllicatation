@@ -19,6 +19,10 @@ import { ReleasedComponent } from './Components/released/released.component';
 import { CartComponent } from './Components/cart/cart.component';
 import { LoginComponent } from './Components/login/login.component';
 import { SellerComponent } from './Components/seller/seller.component';
+import { TopOfferComponent } from './Components/top-offer/top-offer.component';
+import { OrderPlacedComponent } from './Components/order-placed/order-placed.component';
+import { LogoutComponent } from './Components/logout/logout.component';
+import { SearchProductComponent } from './Components/search-product/search-product.component';
 
 
 @NgModule({
@@ -30,7 +34,11 @@ import { SellerComponent } from './Components/seller/seller.component';
     ReleasedComponent,
     CartComponent,
     LoginComponent,
-    SellerComponent
+    SellerComponent,
+    TopOfferComponent,
+    OrderPlacedComponent,
+    LogoutComponent,
+    SearchProductComponent
     
   ],
   imports: [

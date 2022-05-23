@@ -3,27 +3,35 @@
 <div class="row">
   <div class="col-8">
         <div class="searchInput" #searchInput>
-            <div class="input-group">
+          
+            <!-- <div class="input-group">
                 <h2 style="color: white;text-align: center;">Compony Logo</h2>
                 <input type="text" id="GlobalSearch" placeholder="Search For 50,000+ Products">
                 <div class="input-group-append">
                   <button class="btn btn-info" id="SearchButton" type="button" style="height: 45px;">Search</button>
                   
                 </div>
+              </div> -->
+              <div class="input-group d-flex align-items-center">
+                <h2 class="CompanyName" style="color: white;text-align: center; margin-right: 10px;padding-top: 10;"><a class="CompanyLogo" href="/home">Company Logo</a></h2>  
+                <input type="search" class="form-control search" #inputValue placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <!-- <i class="fa fa-search-2x" style="width: 40px;height: 40px; background-color: white;"></i> -->
+                <button type="button" (click)="Search()" class="btn btn-light searchButton"  >Search</button>
               </div>
         </div>
       </div>
-        <div class="col-2 ">
-          <a href="cart">Cart</a> 
+        <div class="col-2 d-flex align-items-center justify-content-center">
+          <button class="btn btn-info cartbutton"><a href="cart">Cart &nbsp;<i class="fa fa-shopping-cart"></i></a> </button>
         </div>
-
-        {{username}}
+        <div class="col-2 d-flex align-items-center">
+          <button class="btn btn-info usernamebutton" (click)="Login()">{{username}}</button>  
+        </div>
+       
     
 </div>
 </div>
 </div>
 
-
-
+<!-- <img src="../../../assets/Resourses/Image/Phones/Samsung/Samsung Galaxy F22/1.jpg" -->
 
 

@@ -4,14 +4,34 @@
     background-color: blue;
 }
 .searchInput{
-    padding: 10px;
+    padding: 15px;
     
 }
-#GlobalSearch{
-    width: 200px; 
-    border-radius: 8px;
-    margin-left: 20px;
+
+.searchButton{
+    border-radius:0 ;
+    height: 38px;
+    color: blue;
 }
-.SearchButton{
-    padding-top: 10px;
+
+
+.search{
+    width: 100px;
+}
+.usernamebutton , .cartbutton{
+    height: 38px;
+    background-color: white;
+    color: Blue;
+    border-radius: 0;
+    width: 80px;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+.CompanyName{
+    margin: 0 0 0 0;
+}
+
+.CompanyLogo{
+    color: white;
+    text-decoration: none;
 }

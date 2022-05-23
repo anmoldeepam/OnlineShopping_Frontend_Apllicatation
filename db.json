@@ -30,26 +30,7 @@
       "products": [
         1
       ],
-      "sellerorder": [
-        {
-          "id": 1,
-          "image": "../../../assets/Resourses/Image/T-Shirts/Puma_White/b9da8153-5d5c-4a04-a98e-e97c12f567241632916946251Tshirts1.webp",
-          "name": "Puma TShirt",
-          "price": 500,
-          "discount": 10,
-          "description": "Men White & Grey Graphic Printed T-shirt",
-          "size": [
-            "XS",
-            "S",
-            "M"
-          ],
-          "sizeAvailed": "XL",
-          "sellerId": 1,
-          "sellerName": "Puma Sports India Pvt LTD",
-          "details": "White and grey Tshirt for men Graphic printed Regular length Round neck Short regular sleeves Knitted cotton fabric",
-          "reviews": "4.3"
-        }
-      ]
+      "sellerorder": []
     },
     {
       "id": 2,
@@ -63,6 +44,12 @@
         {
           "id": 2,
           "image": "../../../assets/Resourses/Image/T-Shirts/HRX/Tshirt_1/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg",
+          "ExtraImages": [
+            "../../../assets/Resourses/Image/T-Shirts/HRX/Tshirt_1/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg",
+            "../../../assets/Resourses/Image/T-Shirts/HRX/Tshirt_1/19616b93-3719-4791-b57f-e703fb289fed1646807648916-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-Pure-Cotton-T-sh-7.webp",
+            "../../../assets/Resourses/Image/T-Shirts/HRX/Tshirt_1/5a6da9ac-d32e-4710-9b6d-569b454560931579692118120-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-2.jpg",
+            "../../../assets/Resourses/Image/T-Shirts/HRX/Tshirt_1/630076d1-bddd-4bd8-825a-f53a545c38481579692117944-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-4.webp"
+          ],
           "name": "HRX by Hrithik Roshan TShirt",
           "price": 410,
           "discount": 5,
@@ -75,11 +62,12 @@
             "XL",
             "XXL"
           ],
-          "sizeAvailed": "S",
+          "sizeAvailed": "40",
           "sellerId": 2,
           "sellerName": "OmniTech Retail",
           "details": "This season set a sporty fashion trend with the HRX Men's Athleisure T-shirt. This striped casual T-shirt can be worn on its own or layered under a jacket or a hoodie.",
-          "reviews": "4.1"
+          "reviews": "4.1",
+          "categoryId": "1"
         }
       ]
     },
@@ -92,6 +80,74 @@
         3
       ],
       "sellerorder": []
+    },
+    {
+      "id": 4,
+      "sellerName": "TradePLFIPLecom",
+      "email": "TradePLFIPLecom@gmail.com",
+      "password": "TradePLFIPLecom",
+      "products": [],
+      "sellerorder": []
+    },
+    {
+      "id": 5,
+      "sellerName": "TREASURE HAUL ONLINE",
+      "email": "TREASUREHAULONLINE@gmail.com",
+      "password": "TREASUREHAULONLINE",
+      "products": [],
+      "sellerorder": []
+    },
+    {
+      "id": 6,
+      "sellerName": "TrueComRetail",
+      "email": "TrueComRetail@gmail.com",
+      "password": "TrueComRetail",
+      "products": [],
+      "sellerorder": []
+    },
+    {
+      "id": 7,
+      "sellerName": "FlashStar Commerce",
+      "email": "FlashStarCommerce@gmail.com",
+      "password": "FlashStarCommerce",
+      "products": [],
+      "sellerorder": [
+        {
+          "id": 10,
+          "image": "../../../assets/Resourses/Image/Shirt/Highlander/1.webp",
+          "ExtraImages": [
+            "../../../assets/Resourses/Image/Shirt/Highlander/1.webp",
+            "../../../assets/Resourses/Image/Shirt/Highlander/2.jpg",
+            "../../../assets/Resourses/Image/Shirt/Highlander/3.webp",
+            "../../../assets/Resourses/Image/Shirt/Highlander/4.webp"
+          ],
+          "name": "HIGHLANDER Shirt",
+          "price": 1049,
+          "discount": 50,
+          "description": "Men Green & White Slim Fit Printed Casual Shirt",
+          "size": [
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          "sizeAvailed": "44",
+          "sellerId": 7,
+          "sellerName": "FlashStar Commerce",
+          "details": "Green and White printed casual shirt, has a spread collar, short sleeves, button placket, curved hem, and 1 patch pocket",
+          "reviews": "4.2",
+          "categoryId": "3"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "sellerName": "Mensa Brand Technologies Private Limited",
+      "email": "MensaBrand@gmail.com",
+      "password": "MensaBrand",
+      "products": [],
+      "sellerorder": []
     }
   ],
   "User": [
@@ -100,8 +156,8 @@
       "userName": "sam@gmail.com",
       "userPassword": "sam",
       "cart": [
-        "1",
-        "2"
+        "2",
+        "10"
       ],
       "address": "",
       "sizeAvailed": ""
@@ -110,7 +166,10 @@
       "id": 2,
       "userName": "anmol@gmail.com",
       "userPassword": "anmol",
-      "cart": [],
+      "cart": [
+        1,
+        2
+      ],
       "address": "",
       "sizeAvailed": ""
     },
@@ -122,6 +181,11 @@
     {
       "id": 1,
       "image": "../../../assets/Resourses/Image/T-Shirts/Puma_White/b9da8153-5d5c-4a04-a98e-e97c12f567241632916946251Tshirts1.webp",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/T-Shirts/Puma_White/b9da8153-5d5c-4a04-a98e-e97c12f567241632916946251Tshirts1.webp",
+        "../../../assets/Resourses/Image/T-Shirts/Puma_White/a54c6255-8f46-4aee-ae2d-2c759c6d8b711632916945796Tshirts2.jpg",
+        "../../../assets/Resourses/Image/T-Shirts/Puma_White/f84cd820-9f31-46b3-b679-825bd7a16bfd1632916946277Tshirts4 (1).webp"
+      ],
       "name": "Puma TShirt",
       "price": 500,
       "discount": 10,
@@ -135,11 +199,18 @@
       "sellerId": 1,
       "sellerName": "Puma Sports India Pvt LTD",
       "details": "White and grey Tshirt for men Graphic printed Regular length Round neck Short regular sleeves Knitted cotton fabric",
-      "reviews": "4.3"
+      "reviews": "4.3",
+      "categoryId": "1"
     },
     {
       "id": 2,
       "image": "../../../assets/Resourses/Image/T-Shirts/HRX/Tshirt_1/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/T-Shirts/HRX/Tshirt_1/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg",
+        "../../../assets/Resourses/Image/T-Shirts/HRX/Tshirt_1/19616b93-3719-4791-b57f-e703fb289fed1646807648916-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-Pure-Cotton-T-sh-7.webp",
+        "../../../assets/Resourses/Image/T-Shirts/HRX/Tshirt_1/5a6da9ac-d32e-4710-9b6d-569b454560931579692118120-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-2.jpg",
+        "../../../assets/Resourses/Image/T-Shirts/HRX/Tshirt_1/630076d1-bddd-4bd8-825a-f53a545c38481579692117944-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-4.webp"
+      ],
       "name": "HRX by Hrithik Roshan TShirt",
       "price": 410,
       "discount": 5,
@@ -156,7 +227,8 @@
       "sellerId": 2,
       "sellerName": "OmniTech Retail",
       "details": "This season set a sporty fashion trend with the HRX Men's Athleisure T-shirt. This striped casual T-shirt can be worn on its own or layered under a jacket or a hoodie.",
-      "reviews": "4.1"
+      "reviews": "4.1",
+      "categoryId": "1"
     },
     {
       "id": 3,
@@ -175,7 +247,8 @@
       "sizeAvailed": "",
       "seller": "truenet Commerce",
       "details": "Navy blue printed T-shirt, has a round neck, short sleeves",
-      "reviews": "4.5"
+      "reviews": "4.5",
+      "categoryId": "1"
     },
     {
       "id": 4,
@@ -194,7 +267,215 @@
       "sellerId": 3,
       "sellerName": "truenet Commerce",
       "details": "Navy blue solid T-shirt, has a polo collar, short sleeves",
-      "reviews": "3.9"
+      "reviews": "3.9",
+      "categoryId": "1"
+    },
+    {
+      "id": 5,
+      "image": "../../../assets/Resourses/Image/Phones/Poco/Poco_c31/1.jpg",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Phones/Poco/Poco_c31/1.jpg",
+        "../../../assets/Resourses/Image/Phones/Poco/Poco_c31/1.jpg",
+        "../../../assets/Resourses/Image/Phones/Poco/Poco_c31/2.jpg",
+        "../../../assets/Resourses/Image/Phones/Poco/Poco_c31/3.jpg",
+        "../../../assets/Resourses/Image/Phones/Poco/Poco_c31/4.jpg"
+      ],
+      "name": "POCO C31 (Royal Blue, 32 GB)  (3 GB RAM)",
+      "price": 10999,
+      "discount": 15,
+      "description": "Handset, Power Adapter, Micro-USB Cable.",
+      "size": [],
+      "sizeAvailed": "",
+      "sellerId": 3,
+      "sellerName": "Truenet Commerce",
+      "details": "3 GB RAM | 32 GB ROM | Expandable Upto 512 GB 16.59 cm (6.53 inch) HD+ Display 13MP + 2MP + 2MP | 5MP Front Camera 5000 mAh Lithium-ion Polymer Battery MediaTek Helio G35 Processor",
+      "reviews": "4.4",
+      "categoryId": "2"
+    },
+    {
+      "id": 6,
+      "image": "../../../assets/Resourses/Image/Phones/Realme/Realme_Narzo_50A/1.jpg",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Phones/Realme/Realme_Narzo_50A/1.jpg",
+        "../../../assets/Resourses/Image/Phones/Realme/Realme_Narzo_50A/2.jpg",
+        "../../../assets/Resourses/Image/Phones/Realme/Realme_Narzo_50A/3.jpg",
+        "../../../assets/Resourses/Image/Phones/Realme/Realme_Narzo_50A/4.jpg"
+      ],
+      "name": "realme Narzo 50A (Oxygen Blue, 64 GB)  (4 GB RAM)",
+      "price": 12999,
+      "discount": 10,
+      "description": "Equipped with a Helio G85 Gaming Processor. ",
+      "size": [],
+      "sizeAvailed": "",
+      "sellerId": 4,
+      "sellerName": "TradePLFIPLecom",
+      "details": "4 GB RAM | 64 GB ROM | Expandable Upto 256 GB 16.51 cm (6.5 inch) HD+ Display 50MP + 2MP + 2MP | 8MP Front Camera 6000 mAh Battery MediaTek Helio G85 Processor that lets you play intense games and binge-watch favourite shows. This smartphone features a 6000 mAh Battery and 18W Quick Charge for uninterrupted performance, and a 50 MP AI Triple Camera to click beautiful photos.",
+      "reviews": "4.4",
+      "categoryId": "2"
+    },
+    {
+      "id": 7,
+      "image": "../../../assets/Resourses/Image/Phones/Motorola/Motorella_C60/1.jpg",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Phones/Motorola/Motorella_C60/1.jpg",
+        "../../../assets/Resourses/Image/Phones/Motorola/Motorella_C60/1.jpg",
+        "../../../assets/Resourses/Image/Phones/Motorola/Motorella_C60/2.jpg",
+        "../../../assets/Resourses/Image/Phones/Motorola/Motorella_C60/3.jpgg",
+        "../../../assets/Resourses/Image/Phones/Motorola/Motorella_C60/4.jpg"
+      ],
+      "name": "MOTOROLA G60 (Moonless, 128 GB)  (6 GB RAM)",
+      "price": 21999,
+      "discount": 27,
+      "description": "Handset, Charger, USB Cable, User Guides",
+      "size": [],
+      "sizeAvailed": "",
+      "sellerId": 5,
+      "sellerName": "TREASURE HAUL ONLINE",
+      "details": "6 GB RAM | 128 GB ROM 17.22 cm (6.78 inch) Full HD+ Display 108MP + 8MP + 2MP | 32MP Front Camera 6000 mAh Battery Qualcomm Snapdragon 732G Processor 120Hz Refresh Rate Stock Android Experience",
+      "reviews": "4.2",
+      "categoryId": "2"
+    },
+    {
+      "id": 8,
+      "image": "../../../assets/Resourses/Image/Phones/Samsung/Samsung Galaxy F22/1.jpg",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Phones/Samsung/Samsung Galaxy F22/1.jpg",
+        "../../../assets/Resourses/Image/Phones/Samsung/Samsung Galaxy F22/1.jpg",
+        "../../../assets/Resourses/Image/Phones/Samsung/Samsung Galaxy F22/2.jpg",
+        "../../../assets/Resourses/Image/Phones/Samsung/Samsung Galaxy F22/3.jpgg",
+        "../../../assets/Resourses/Image/Phones/Samsung/Samsung Galaxy F22/4.jpg"
+      ],
+      "name": "SAMSUNG Galaxy F22 (Denim Blue, 64 GB)  (4 GB RAM)",
+      "price": 11999,
+      "discount": 27,
+      "description": "Bid goodbye to screen stuttering, Samsung F22",
+      "size": [],
+      "sizeAvailed": "",
+      "sellerId": 6,
+      "sellerName": "TrueComRetail",
+      "details": "6 GB RAM | 128 GB ROM 17.22 cm (6.78 inch) Full HD+ Display 108MP + 8MP + 2MP | 32MP Front Camera 6000 mAh Battery Qualcomm Snapdragon 732G Processor 120Hz Refresh Rate Stock Android Experience   Bid goodbye to screen stuttering, poor display quality, and low-resolution photos by getting your hands on the Samsung Galaxy F22 smartphone. Featuring a 90 Hz refresh rate, HD+ sAMOLED display, and True 48 MP quad-rear camera, this smartphone is sure to be your ideal companion for entertainment, gaming, and communication. What's more, its 6000 mAh battery ensures that a full charge can last for an entire day.",
+      "reviews": "4.3",
+      "categoryId": "2"
+    },
+    {
+      "id": 9,
+      "image": "../../../assets/Resourses/Image/Shirt/Roadster/1.webp",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Shirt/Roadster/1.webp",
+        "../../../assets/Resourses/Image/Shirt/Roadster/2.webp",
+        "../../../assets/Resourses/Image/Shirt/Roadster/3.webp",
+        "../../../assets/Resourses/Image/Shirt/Roadster/4.webp"
+      ],
+      "name": "Roadster Shirt",
+      "price": 1499,
+      "discount": 50,
+      "description": "Men Black & Grey Checked Casual Sustainable Shirt",
+      "size": [
+        "38",
+        "40",
+        "42",
+        "44"
+      ],
+      "sizeAvailed": "",
+      "sellerId": 3,
+      "sellerName": "Truenet Commerce",
+      "details": "Black and grey checked casual shirt, has a spread collar, a full button placket, long sleeves with roll-up tabs, a patch pocket, a curved hem",
+      "reviews": "4.3",
+      "categoryId": "3"
+    },
+    {
+      "id": 10,
+      "image": "../../../assets/Resourses/Image/Shirt/Highlander/1.webp",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Shirt/Highlander/1.webp",
+        "../../../assets/Resourses/Image/Shirt/Highlander/2.jpg",
+        "../../../assets/Resourses/Image/Shirt/Highlander/3.webp",
+        "../../../assets/Resourses/Image/Shirt/Highlander/4.webp"
+      ],
+      "name": "HIGHLANDER Shirt",
+      "price": 1049,
+      "discount": 50,
+      "description": "Men Green & White Slim Fit Printed Casual Shirt",
+      "size": [
+        "38",
+        "40",
+        "42",
+        "44",
+        "46"
+      ],
+      "sizeAvailed": "",
+      "sellerId": 7,
+      "sellerName": "FlashStar Commerce",
+      "details": "Green and White printed casual shirt, has a spread collar, short sleeves, button placket, curved hem, and 1 patch pocket",
+      "reviews": "4.2",
+      "categoryId": "3"
+    },
+    {
+      "id": 11,
+      "image": "../../../assets/Resourses/Image/Shirt/Dennis Lingo/1.jpg",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Shirt/Dennis Lingo/1.jpg",
+        "../../../assets/Resourses/Image/Shirt/Dennis Lingo/2.jpg",
+        "../../../assets/Resourses/Image/Shirt/Dennis Lingo/3.webp",
+        "../../../assets/Resourses/Image/Shirt/Dennis Lingo/4.webp"
+      ],
+      "name": "Dennis Lingo Shirt",
+      "price": 1849,
+      "discount": 63,
+      "description": "Men Pink Slim Fit Casual Shirt",
+      "size": [
+        "38",
+        "40",
+        "44",
+        "46"
+      ],
+      "sizeAvailed": "",
+      "sellerId": 8,
+      "sellerName": "Mensa Brand Private Limited",
+      "details": "Pink solid casual shirt, has a spread collar, long sleeves, curved hem, one patch pocket",
+      "reviews": "4.1",
+      "categoryId": "3"
+    },
+    {
+      "id": 12,
+      "image": "../../../assets/Resourses/Image/Shirt/Wrong/1.webp",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Shirt/Wrong/1.webp",
+        "../../../assets/Resourses/Image/Shirt/Wrong/2.jpg",
+        "../../../assets/Resourses/Image/Shirt/Wrong/3.jpg",
+        "../../../assets/Resourses/Image/Shirt/Wrong/4.jpg"
+      ],
+      "name": "WROGN Shirt",
+      "price": 2499,
+      "discount": 55,
+      "description": "Navy Blue Slim Fit Checked Casual Shirt",
+      "size": [
+        "38",
+        "40",
+        "42",
+        "44",
+        "46"
+      ],
+      "sizeAvailed": "",
+      "sellerId": 2,
+      "sellerName": "OmniTech Retail",
+      "details": "Navy blue checked casual shirt, has a spread collar, a full button placket, long sleeves, a patch pocket, curved hem Size & Fit",
+      "reviews": "4.4",
+      "categoryId": "3"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "T Shirt"
+    },
+    {
+      "id": 2,
+      "name": "Mobile"
+    },
+    {
+      "id": 3,
+      "name": "Shirt"
     }
   ],
   "profile": {

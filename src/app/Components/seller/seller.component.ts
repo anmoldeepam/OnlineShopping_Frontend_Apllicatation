@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { JsonServerService } from 'src/app/Services/json-server.service';
 import { Product } from '../Model/Product';
 import { Seller } from '../Model/seller';
@@ -8,7 +8,7 @@ import { Seller } from '../Model/seller';
   templateUrl: './seller.component.html',
   styleUrls: ['./seller.component.css']
 })
-export class SellerComponent implements OnInit {
+export class SellerComponent implements OnInit,OnDestroy {
 
   constructor(private jsonServer:JsonServerService) { }
 
@@ -30,7 +30,9 @@ export class SellerComponent implements OnInit {
   NoOrdersFlag=false
 
   ngOnInit(): void {
-     this.sellerId= localStorage.getItem('sellerId')
+        // OLD and NEW is down (Localstorage ot Session storage)
+    // this.sellerId= localStorage.getItem('sellerId')
+    this.sellerId= sessionStorage.getItem('sellerId')
      this.jsonServer.getSeller(this.sellerId).subscribe((seller)=>{
        this.seller = seller  
        this.productsValue=this.seller.sellerorder
@@ -64,8 +66,7 @@ export class SellerComponent implements OnInit {
     
   }
 
-
-  
-
-
+ngOnDestroy(): void {
+  sessionStorage.removeItem('sellerId')
+}
 }

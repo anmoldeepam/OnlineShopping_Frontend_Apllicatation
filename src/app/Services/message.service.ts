@@ -8,6 +8,8 @@ export class MessageService {
 
   uname = new Subject<string>();
 
+  searchValue = new Subject<string>();
+
   constructor() { }
 
   ShowMessage(){

@@ -12,7 +12,34 @@
   </div>
 </div> -->
 
+<app-search-bar></app-search-bar>
 
+<!-- Categories -->
+<div class="container">
+  <div class="row categories">
+    <div class="col-2">
+      
+     <div (click)="TopOffer()"> <img  src="../../../assets/categories/TopOffer.jpg"></div> 
+    </div>
+    <div class="col-2">
+      <img src="../../../assets/categories/Grocery.jpg">
+    </div>
+    <div class="col-2">
+      <img src="../../../assets/categories/Electronics.jpg">
+    </div>
+    <div class="col-2">
+      <img src="../../../assets/categories/Fashion.jpg">
+    </div>
+    <div class="col-2">
+      <img src="../../../assets/categories/Mobiles.jpg">
+    </div>
+    <div class="col-2">
+      <img src="../../../assets/categories/Appliances.jpg">
+    </div>
+  </div>
+</div>
+
+<!-- Home -->
 <div class="conatainer">
 <div class="row">
   <div class="col">
@@ -21,7 +48,7 @@
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="../../../assets/Hover_Image/1.png" class="d-block w-100" style="height: 200px;" alt="...">
+        <img src="../../../assets/Hover_Image/3.jpg" class="d-block w-100" style="height: 200px;" alt="...">
       </div>
       <div class="carousel-item">
         <img src="../../../assets/Hover_Image/2.webp" class="d-block w-100" style="height: 200px;"  alt="IMage">
@@ -32,18 +59,32 @@
     </div>
   </div>
 
-
+  <!-- <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" style="background-color: white;border-radius: 0;width: 50px;height: 50px;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown button
+      <div (click)="TopOffer()"> <img  sty src="../../../assets/categories/TopOffer.jpg"></div> 
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div> -->
 
 
   <div class="row justify-content-center">
-    <div *ngFor="let product of products" id="CardColumn" class="col-md-3">
-      <div  class="card" style="width: 18rem;">
+    <div *ngFor="let product of products" id="CardColumn" class="col-md-4 col-lg-3 col-sm-6 col-12">
+      <div (click) = "OpenDetailsPage(product.id)" class="card" style="width: 300px; height: auto;">
         <img src="{{product.image}}" class="card-img-top" alt="GTA">
         <div class="card-body">
           <h5 class="card-title">{{product.name}}</h5>
-          <p class="card-text">{{product.description}}</p>
-          <button (click) = "OpenDetailsPage(product.id)" class="btn btn-primary">Details</button>
+          <div class="card-text Description">{{product.description}}</div>
+          <div class="card-text"><span class="ratings">{{product.reviews}}</span> Ratings</div>
+          <span class="card-text cardPrice"> <span style="font-size: larger;  ">Price : </span>{{product.price}}</span>
+          <span style="color: green; padding-left: 15px; font-size: large;">{{product.discount}}% Off</span>
+          <!-- <button (click) = "OpenDetailsPage(product.id)" class="btn btn-primary">Details</button>
           <button style="margin-left: 6px;" class="btn btn-warning" (click)="AddtoCart(product)">Add to Cart</button>
+         -->
         </div>
       </div>
     </div>

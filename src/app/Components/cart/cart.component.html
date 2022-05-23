@@ -1,6 +1,12 @@
-<div class="container">
+
+<app-search-bar></app-search-bar>
+<div *ngIf="NoProductFlag" class="NoProduct">
+    There is no Product .. Please Add some
+</div>
+
+<div *ngIf="!NoProductFlag" class="container">
     <h2 class="cartheading">Cart</h2>
-<div class="cart">
+<div  class="cart">
     <div class="products">
     <div *ngFor="let product of products" class="col-md-8">
         <div class="card mb-3">
@@ -63,3 +69,4 @@
       Easy returns.100% Authentic products
 </div>
 </div>
+

@@ -1,5 +1,6 @@
 import { coerceStringArray } from '@angular/cdk/coercion';
 import { AfterContentInit, Component, DoCheck, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Router } from '@angular/router';
 import { throttleTime } from 'rxjs';
 import { CartService } from 'src/app/Services/cart.service';
 import { JsonServerService } from 'src/app/Services/json-server.service';
@@ -15,7 +16,9 @@ import { User } from '../Model/User';
 })
 export class CartComponent implements OnInit {
 
-  constructor(private jsonServer: JsonServerService) {
+  constructor(private jsonServer: JsonServerService,
+    private router :Router
+    ) {
 
   }
   user!: User
@@ -35,7 +38,9 @@ export class CartComponent implements OnInit {
     details: '',
     reviews: '',
     QandA: '',
-    cart: []
+    cart: [],
+    ExtraImages: [],
+    categoryId: 0
   }
   totalPrice:number =0
   totalPriceAfterAddingDeliveryCharges:number=0
@@ -50,9 +55,6 @@ export class CartComponent implements OnInit {
 
   // cartProducts:CartProduct[] = []
 
-
-  
-  
   seller: Seller ={
     id: 0,
     sellerName: '',
@@ -73,14 +75,24 @@ export class CartComponent implements OnInit {
   }
 
   productSize:any
+  NoProductFlag:boolean = false
 
   ngOnInit(): void {
 
     
-
-    this.jsonServer.getUser(localStorage.getItem('userid')).subscribe((user: User) => {
+// OLD and NEW is down (Localstorage ot Session storage)
+    // this.jsonServer.getUser(localStorage.getItem('userid')).subscribe((user: User) => {
+    //   this.user = user
+    //   this.cartProduct.userid = user.id
+      
+    // })
+    this.jsonServer.getUser(sessionStorage.getItem('userid')).subscribe((user: User) => {
       this.user = user
       this.cartProduct.userid = user.id
+     // console.log(this.user.cart)
+      if(this.user.cart.length == 0){
+        this.NoProductFlag = true
+      }
       
     })
 
@@ -91,6 +103,7 @@ export class CartComponent implements OnInit {
          this.products.push(product)
           this.cartProduct.products.push(product)
           this.totalPrice += product.price
+          
           //console.log(product)
         })
       }
@@ -115,7 +128,12 @@ export class CartComponent implements OnInit {
 
   RefreshPage(){
 
-    this.jsonServer.getUser(localStorage.getItem('userid')).subscribe((user: User) => {
+// OLD and NEW is down (Localstorage ot Session storage)
+// this.jsonServer.getUser(localStorage.getItem('userid')).subscribe((user: User) => {
+      
+//   this.user = user
+// })
+    this.jsonServer.getUser(sessionStorage.getItem('userid')).subscribe((user: User) => {
       
       this.user = user
     })
@@ -210,12 +228,13 @@ export class CartComponent implements OnInit {
   }
 
   PlaceOrder(){
-    
+    console.log(this.cartProduct)
     this.cartProduct.products.forEach(product =>{
       if(product.sizeAvailed == ''){
         alert("Please Select Size")
         
       }
+      console.log(product)
       this.jsonServer.getSeller(product.sellerId).subscribe((seller)=>{
         console.log("before Ordering")
           seller.sellerorder.push(product)
@@ -223,7 +242,8 @@ export class CartComponent implements OnInit {
             console.log(sellerVal)
           })
           console.log("After Pushed")
+          this.router.navigateByUrl("/orderPlaced")
       })
-    })
+     })
   }
 }

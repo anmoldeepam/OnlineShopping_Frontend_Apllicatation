@@ -1,6 +1,11 @@
+.container{
+    margin-top: 30px;
+}
+
 div{
     
 }
+
 
 .col-md-5 {
     padding-top: 30px;
@@ -65,4 +70,18 @@ background-color: green;
 }
 .details{
     font-size: larger;
+}
+
+.imageDiv{
+    
+    margin: 10px;
+}
+.smallimage:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    border: 2px soild blue;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    opacity: 1;
 }
