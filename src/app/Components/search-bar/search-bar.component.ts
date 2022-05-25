@@ -54,12 +54,15 @@ export class SearchBarComponent implements OnInit {
     this.router.navigateByUrl('/login')
   }
 
-  Search(){
+  Search(event:any){
+
+    if(event.key == "Enter"){
     const valueInput = this.SearchValue.nativeElement.value
           this.messageService.searchValue = this.SearchValue.nativeElement.value
           console.log(this.messageService.searchValue)
           this.router.navigateByUrl(`/search/${valueInput}`)
   }
+}
  
 
   

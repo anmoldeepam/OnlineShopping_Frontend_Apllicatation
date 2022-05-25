@@ -33,7 +33,9 @@ export class DetailsComponent implements OnInit {
       reviews: '',
       QandA: '',
       cart: [],
-      categoryId: 0
+      categoryId: 0,
+      color: '',
+      brand: ''
     }
     offerPrice!:any
     productSize!:string[]

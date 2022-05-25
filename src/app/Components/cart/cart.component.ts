@@ -40,7 +40,9 @@ export class CartComponent implements OnInit {
     QandA: '',
     cart: [],
     ExtraImages: [],
-    categoryId: 0
+    categoryId: 0,
+    color: '',
+    brand: ''
   }
   totalPrice:number =0
   totalPriceAfterAddingDeliveryCharges:number=0

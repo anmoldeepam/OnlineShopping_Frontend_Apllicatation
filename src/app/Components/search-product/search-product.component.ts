@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { ActivatedRoute, ChildActivationStart, Router } from '@angular/router';
 import { JsonServerService } from 'src/app/Services/json-server.service';
 import { MessageService } from 'src/app/Services/message.service';
 import { category } from '../Model/category';
 import { Product } from '../Model/Product';
+
 
 @Component({
   selector: 'app-search-product',
@@ -16,8 +17,8 @@ export class SearchProductComponent implements OnInit {
   constructor(
     private jsonServer: JsonServerService,
     private router: Router,
-    private messageService:MessageService,
-    private route:ActivatedRoute
+    private messageService: MessageService,
+    private route: ActivatedRoute
   ) { }
 
   products: Product[] = []
@@ -38,58 +39,147 @@ export class SearchProductComponent implements OnInit {
     reviews: '',
     categoryId: 0,
     QandA: '',
-    cart: []
+    cart: [],
+    color: '',
+    brand: ''
   }
 
-searchName:string = ''
-category:category[] =[]
+  searchName: string = ''
+  category: category[] = []
 
-categoryName:string[] =[]
+  categoryName: string[] = []
+  Allproducts: Product[] = []
 
   ngOnInit(): void {
-    
+
     this.searchName = this.route.snapshot.paramMap.get('searchValue') || ''
 
-    this.jsonServer.getCategory().subscribe((category)=>{
-      
-      for(let i=0;i<category.length;i++){
+    this.jsonServer.getCategory().subscribe((category) => {
+
+      for (let i = 0; i < category.length; i++) {
         this.categoryName.push(category[i].name)
-      }      
+      }
     })
- 
-    this.jsonServer.getProducts().subscribe((products) => { 
+
+    this.jsonServer.getProducts().subscribe((products) => {
 
       products.forEach(product => {
         if (product.name.toLowerCase().search(this.searchName.toLowerCase()) >= 0) {
-          if(!this.products.includes(product)){
-          this.products.push(product)
+          if (!this.products.includes(product)) {
+            this.products.push(product)
+            this.Allproducts.push(product)
           }
         }
         else if (product.description.toLowerCase().search(this.searchName.toLowerCase()) >= 0) {
-          if(!this.products.includes(product)){
+          if (!this.products.includes(product)) {
             this.products.push(product)
-            }
+            this.Allproducts.push(product)
+          }
         }
         else if (product.details.toLowerCase().search(this.searchName.toLowerCase()) >= 0) {
-          if(!this.products.includes(product)){
+          if (!this.products.includes(product)) {
             this.products.push(product)
-            }
+            this.Allproducts.push(product)
+          }
         }
-        this.jsonServer.getCategoryById(product.categoryId).subscribe((categoryValue)=>{
-          if(categoryValue.name.toLowerCase().search(this.searchName.toLowerCase())>=0){
-            if(!this.products.includes(product)){
+        this.jsonServer.getCategoryById(product.categoryId).subscribe((categoryValue) => {
+          if (categoryValue.name.toLowerCase().search(this.searchName.toLowerCase()) >= 0) {
+            if (!this.products.includes(product)) {
               this.products.push(product)
-              }
+              this.Allproducts.push(product)
+            }
           }
         })
- 
+
       })
     }
     )
   }
 
   OpenDetailsPage(productId: any) {
-  //  console.log(productId)
+
     this.router.navigateByUrl(`/details/${productId}`)
   }
+
+  radio(event: any) {
+    if (event.target.value == "T-Shirt" ||
+      event.target.value == "Shirt" ||
+      event.target.value == "Mobile" ||
+      event.target.value == "Electronics" ||
+      event.target.value == "BottomWear" ||
+      event.target.value == "Shoes" ||
+      event.target.value == "Sliders") {
+      this.products = []
+      this.Allproducts.forEach(Oneproduct => {
+        this.jsonServer.getCategoryById(Oneproduct.categoryId).subscribe(categoryVal => {
+
+          if (categoryVal.name.toLowerCase() == event.target.value.toLowerCase()) {
+            this.products.push(Oneproduct)
+          }
+        })
+      })
+    }
+
+    else if (event.target.value == "0-500" ||
+      event.target.value == "501-1000" ||
+      event.target.value == "1001-1500" ||
+      event.target.value == "1501-2000" ||
+      event.target.value == "200 & Above") {
+
+      this.products = []
+      let valueFirst = event.target.value.toString().split("-")[0]
+      let valueLast = event.target.value.toString().split("-")[1]
+
+      this.Allproducts.forEach(Oneproduct => {
+
+        if (Oneproduct.price > parseInt(valueFirst) && Oneproduct.price <= parseInt(valueLast)) {
+          this.products.push(Oneproduct)
+        }
+
+      })
+    }
+
+    else if (
+      event.target.value == "Red" ||
+      event.target.value == "Blue" ||
+      event.target.value == "Green" ||
+      event.target.value == "Yellow" ||
+      event.target.value == "Black"
+    ) {
+      this.products = []
+      this.Allproducts.forEach(Oneproduct => {
+        if (Oneproduct.color.toString() == event.target.value.toString()) {
+          this.products.push(Oneproduct)
+        }
+      })
+    }
+
+    else if(
+      event.target.value == "0-10 %" ||
+      event.target.value == "11-20 %" ||
+      event.target.value == "21-30 %" ||
+      event.target.value == "31-40 %" ||
+      event.target.value == "41-50 %" ||
+      event.target.value == "51-60 %" ||
+      event.target.value == "61-70 %" ||
+      event.target.value == "70 % and Above" 
+    ){
+      this.products = []
+
+      let valueFirst = event.target.value.toString().split("-")[0]
+      let valueLast = event.target.value.toString().split("-")[1]
+
+      console.log(event.target.value.toString().split("-")[1])
+      console.log(event.target.value.toString().split("-")[0])
+
+      this.Allproducts.forEach(Oneproduct => {
+        if (Oneproduct.discount > parseInt(valueFirst) && Oneproduct.discount <= parseInt(valueLast)) {
+          this.products.push(Oneproduct)
+        }
+      })
+    }
+  }
+
+
 }
+

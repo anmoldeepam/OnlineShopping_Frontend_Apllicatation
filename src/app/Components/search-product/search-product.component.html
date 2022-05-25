@@ -1,4 +1,3 @@
-
 <app-search-bar></app-search-bar>
 <!-- <div class="conatainer">
     
@@ -19,31 +18,85 @@
 </div>
   </div> -->
 
-  <div class="conatainer">
-    <div class="row">
-      <div class="col">
-        
-      <div class="row justify-content-center">
-        <div *ngFor="let product of products" id="CardColumn" class="col-md-4 col-lg-3 col-sm-6 col-12">
-          <div (click) = "OpenDetailsPage(product.id)" class="card" style="width: 300px; height: auto;">
-            <img src="{{product.image}}" class="card-img-top" alt="GTA">
-            <div class="card-body">
-              <h5 class="card-title">{{product.name}}</h5>
-              <div class="card-text Description">{{product.description}}</div>
-              <div class="card-text"><span class="ratings">{{product.reviews}}</span> Ratings</div>
-              <span class="card-text cardPrice"> <span style="font-size: larger;  ">Price : </span>{{product.price}}</span>
-              <span style="color: green; padding-left: 15px; font-size: large;">{{product.discount}}% Off</span>
-              <!-- <button (click) = "OpenDetailsPage(product.id)" class="btn btn-primary">Details</button>
-              <button style="margin-left: 6px;" class="btn btn-warning" (click)="AddtoCart(product)">Add to Cart</button>
-             -->
-            </div>
+<div class="conatainer">
+    <div class="row align-items-start fullRow ">
+        <div class="col-2">
+            <span class="row justify-content-center FilterOptions">Filter Options</span>
+            <!-- <div class="filterColumn">
+              <input type="radio" (change)="radio($event)" value="Men" class="form-check-input" ><span>Men</span><br>
+              <input type="radio" (change)="radio($event)" value="Women" class="form-check-input" ><span>Women</span><br>
+              <input type="radio" (change)="radio($event)" value="Boys" class="form-check-input" ><span>Boys</span><br>
+              <input type="radio" (change)="radio($event)" value="Girls" class="form-check-input" ><span>Girls</span><br>
+
+            </div><br> -->
+            <div class="form-check">
+            <div class="filterColumn">
+              <div class="Headings">CATEGORIES</div>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="T-Shirt" class="form-check-input" ><span>T-Shirt</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="Shirt" class="form-check-input" ><span>Shirt</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="Mobile" class="form-check-input" ><span>Mobile</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="Electronics" class="form-check-input" ><span>Electronics</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="BottomWear" class="form-check-input" ><span>BottomWear</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="Shoes" class="form-check-input" ><span>Shoes</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="Sliders" class="form-check-input" ><span>Sliders</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="Accessories" class="form-check-input" ><span>Accessories</span><br>
+            </div><br>
+            <div class="filterColumn">
+              <div class="Headings">PRICE RANGE</div>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="0-500" class="form-check-input" ><span>0-500</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="501-1000" class="form-check-input" ><span>501-1000</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="1001-1500" class="form-check-input" ><span>1001-1500</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="1501-2000" class="form-check-input" ><span>1501-2000</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="200 & Above" class="form-check-input" ><span>2000 & Above</span><br>
+              
+            </div><br>
+            <div class="filterColumn">
+              <div class="Headings">COLOR</div>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="Red" class="form-check-input" ><span style="color: red;">Red</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="Blue" class="form-check-input" ><span style="color: Blue;">Blue</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="Green" class="form-check-input" ><span style="color: Green;">Green</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="Yellow" class="form-check-input" ><span style="color: yellow;">Yellow</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="Black" class="form-check-input" ><span style="color: black;">Black</span><br>
+              
+            </div><br>
+            <div class="filterColumn">
+              <div class="Headings">DISCOUNT</div>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="0-10 %" class="form-check-input" ><span>0-10 %</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="11-20 %" class="form-check-input" ><span>11-20 %</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="21-30 %" class="form-check-input" ><span>21-30 %</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="31-40 %" class="form-check-input" ><span>31-40 %</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="41-50 %" class="form-check-input" ><span>41-50 %</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="51-60 %" class="form-check-input" ><span>51-60 %</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="61-70 %" class="form-check-input" ><span>61-70 %</span><br>
+              <input type="radio" (change)="radio($event)" name="flexRadioDefault" id="flexRadioDefault1" value="70 % and Above" class="form-check-input" ><span>70 % and Above</span><br>
+              
+            </div><br>
+
           </div>
+
+
+        </div><br>
+        
+        <div class="col">
+
+            <div class="row justify-content-center">
+                <div *ngFor="let product of products" id="CardColumn" style="padding:0 ;">
+                    <div (click)="OpenDetailsPage(product.id)" class="card" style="width: 300px; height: auto;">
+                        <img src="{{product.image}}" class="card-img-top" alt="GTA">
+                        <div class="card-body">
+                            <h5 class="card-title">{{product.name}}</h5>
+                            <div class="card-text Description">{{product.description}}</div>
+                            <div class="card-text"><span class="ratings">{{product.reviews}}</span> Ratings</div>
+                            <span class="card-text cardPrice"> <span style="font-size: larger;  ">Price :
+                                </span>{{product.price}}</span>
+                            <span style="color: green; padding-left: 15px; font-size: large;">{{product.discount}}%
+                                Off</span>
+                   
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    
-      
-    
-      </div>
-    
     </div>
-    </div>
-    </div>
+</div>
+

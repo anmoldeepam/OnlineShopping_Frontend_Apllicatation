@@ -16,5 +16,7 @@ export interface Product{
     categoryId:number
     QandA:string
     cart:number[]
+    color:string
+    brand:string
 
 }

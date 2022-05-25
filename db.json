@@ -148,7 +148,26 @@
       "password": "MensaBrand",
       "products": [],
       "sellerorder": []
+    },
+    
+    {
+      "id": 9,
+      "sellerName": "TradePLFIPLecom",
+      "email": "TradePLFIPLecom@gmail.com",
+      "password": "TradePLFIPLecom",
+      "products": [],
+      "sellerorder": []
+    },
+    {
+      "id": 10,
+      "sellerName": "IWQNBecommerce",
+      "email": "IWQNBecommerce@gmail.com",
+      "password": "IWQNBecommerce",
+      "products": [],
+      "sellerorder": []
     }
+    
+
   ],
   "User": [
     {
@@ -200,7 +219,8 @@
       "sellerName": "Puma Sports India Pvt LTD",
       "details": "White and grey Tshirt for men Graphic printed Regular length Round neck Short regular sleeves Knitted cotton fabric",
       "reviews": "4.3",
-      "categoryId": "1"
+      "categoryId": "1",
+      "color":"White"
     },
     {
       "id": 2,
@@ -228,11 +248,18 @@
       "sellerName": "OmniTech Retail",
       "details": "This season set a sporty fashion trend with the HRX Men's Athleisure T-shirt. This striped casual T-shirt can be worn on its own or layered under a jacket or a hoodie.",
       "reviews": "4.1",
-      "categoryId": "1"
+      "categoryId": "1",
+      "color":"Blue"
     },
     {
       "id": 3,
       "image": "../../../assets/Resourses/Image/T-Shirts/Roadster/RoadsterShirt_1/6951be26-4632-4cbf-9817-1b57f0d958be1551949925418-Roadster-Men-Navy-Blue-Printed-Round-Neck-T-shirt-1471551949-4.webp",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/T-Shirts/Roadster/RoadsterShirt_1/5c988b49-a6ff-415b-bb6b-69302c6db4591551949925402-Roadster-Men-Navy-Blue-Printed-Round-Neck-T-shirt-1471551949-5.webp",
+        "../../../assets/Resourses/Image/T-Shirts/Roadster/RoadsterShirt_1/6951be26-4632-4cbf-9817-1b57f0d958be1551949925418-Roadster-Men-Navy-Blue-Printed-Round-Neck-T-shirt-1471551949-4.webp",
+        "../../../assets/Resourses/Image/T-Shirts/Roadster/RoadsterShirt_1/79e67cad-f9b6-4b9e-9c72-ebf4abf89c441551949925454-Roadster-Men-Navy-Blue-Printed-Round-Neck-T-shirt-1471551949-2.jpg",
+        "../../../assets/Resourses/Image/T-Shirts/Roadster/RoadsterShirt_1/8c13e0b6-f8bd-492b-86c2-7055317139f51551949925385-Roadster-Men-Navy-Blue-Printed-Round-Neck-T-shirt-1471551949-6.webp"
+      ],
       "name": "Roadster TShirt",
       "price": 174,
       "discount": 10,
@@ -248,11 +275,18 @@
       "seller": "truenet Commerce",
       "details": "Navy blue printed T-shirt, has a round neck, short sleeves",
       "reviews": "4.5",
-      "categoryId": "1"
+      "categoryId": "1",
+      "color":"Black"
     },
     {
       "id": 4,
       "image": "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/4ff84b3f-96cc-4e3c-84e2-b6d5d13e06451548320874372-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-3.jpg",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/271f9b96-3b40-4330-8ce2-b093af796ac11548320874341-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-5.webp",
+        "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/4ff84b3f-96cc-4e3c-84e2-b6d5d13e06451548320874372-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-3.jpg",
+        "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/c9be0d6e-30a4-4242-b4e0-1c166b73f2781548320874402-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-1.webp",
+        "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/e4fa716f-3181-4c3b-8f35-0d30fc5ff45d1548320874385-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-2.jpg"
+      ],
       "name": "HereAndNow TShirt",
       "price": 580,
       "discount": 15,
@@ -268,7 +302,8 @@
       "sellerName": "truenet Commerce",
       "details": "Navy blue solid T-shirt, has a polo collar, short sleeves",
       "reviews": "3.9",
-      "categoryId": "1"
+      "categoryId": "1",
+      "color":"Blue"
     },
     {
       "id": 5,
@@ -318,9 +353,8 @@
       "image": "../../../assets/Resourses/Image/Phones/Motorola/Motorella_C60/1.jpg",
       "ExtraImages": [
         "../../../assets/Resourses/Image/Phones/Motorola/Motorella_C60/1.jpg",
-        "../../../assets/Resourses/Image/Phones/Motorola/Motorella_C60/1.jpg",
         "../../../assets/Resourses/Image/Phones/Motorola/Motorella_C60/2.jpg",
-        "../../../assets/Resourses/Image/Phones/Motorola/Motorella_C60/3.jpgg",
+        "../../../assets/Resourses/Image/Phones/Motorola/Motorella_C60/3.jpg",
         "../../../assets/Resourses/Image/Phones/Motorola/Motorella_C60/4.jpg"
       ],
       "name": "MOTOROLA G60 (Moonless, 128 GB)  (6 GB RAM)",
@@ -340,9 +374,8 @@
       "image": "../../../assets/Resourses/Image/Phones/Samsung/Samsung Galaxy F22/1.jpg",
       "ExtraImages": [
         "../../../assets/Resourses/Image/Phones/Samsung/Samsung Galaxy F22/1.jpg",
-        "../../../assets/Resourses/Image/Phones/Samsung/Samsung Galaxy F22/1.jpg",
         "../../../assets/Resourses/Image/Phones/Samsung/Samsung Galaxy F22/2.jpg",
-        "../../../assets/Resourses/Image/Phones/Samsung/Samsung Galaxy F22/3.jpgg",
+        "../../../assets/Resourses/Image/Phones/Samsung/Samsung Galaxy F22/3.jpg",
         "../../../assets/Resourses/Image/Phones/Samsung/Samsung Galaxy F22/4.jpg"
       ],
       "name": "SAMSUNG Galaxy F22 (Denim Blue, 64 GB)  (4 GB RAM)",
@@ -356,6 +389,7 @@
       "details": "6 GB RAM | 128 GB ROM 17.22 cm (6.78 inch) Full HD+ Display 108MP + 8MP + 2MP | 32MP Front Camera 6000 mAh Battery Qualcomm Snapdragon 732G Processor 120Hz Refresh Rate Stock Android Experience   Bid goodbye to screen stuttering, poor display quality, and low-resolution photos by getting your hands on the Samsung Galaxy F22 smartphone. Featuring a 90 Hz refresh rate, HD+ sAMOLED display, and True 48 MP quad-rear camera, this smartphone is sure to be your ideal companion for entertainment, gaming, and communication. What's more, its 6000 mAh battery ensures that a full charge can last for an entire day.",
       "reviews": "4.3",
       "categoryId": "2"
+      
     },
     {
       "id": 9,
@@ -381,7 +415,8 @@
       "sellerName": "Truenet Commerce",
       "details": "Black and grey checked casual shirt, has a spread collar, a full button placket, long sleeves with roll-up tabs, a patch pocket, a curved hem",
       "reviews": "4.3",
-      "categoryId": "3"
+      "categoryId": "3",
+      "color":"Black"
     },
     {
       "id": 10,
@@ -408,7 +443,8 @@
       "sellerName": "FlashStar Commerce",
       "details": "Green and White printed casual shirt, has a spread collar, short sleeves, button placket, curved hem, and 1 patch pocket",
       "reviews": "4.2",
-      "categoryId": "3"
+      "categoryId": "3",
+      "color":"Green"
     },
     {
       "id": 11,
@@ -434,7 +470,8 @@
       "sellerName": "Mensa Brand Private Limited",
       "details": "Pink solid casual shirt, has a spread collar, long sleeves, curved hem, one patch pocket",
       "reviews": "4.1",
-      "categoryId": "3"
+      "categoryId": "3",
+      "color":"Orange"
     },
     {
       "id": 12,
@@ -461,13 +498,106 @@
       "sellerName": "OmniTech Retail",
       "details": "Navy blue checked casual shirt, has a spread collar, a full button placket, long sleeves, a patch pocket, curved hem Size & Fit",
       "reviews": "4.4",
-      "categoryId": "3"
+      "categoryId": "3",
+      "color":"Blue"
+    },
+    {
+      "id": 13,
+      "image": "../../../assets/Resourses/Image/TV/OnePlus/OnuPlus_u1S/1.jpg",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/TV/OnePlus/OnuPlus_u1S/1.jpg",
+        "../../../assets/Resourses/Image/TV/OnePlus/OnuPlus_u1S/2.jpg",
+        "../../../assets/Resourses/Image/TV/OnePlus/OnuPlus_u1S/3.jpg",
+        "../../../assets/Resourses/Image/TV/OnePlus/OnuPlus_u1S/4.jpg",
+        "../../../assets/Resourses/Image/TV/OnePlus/OnuPlus_u1S/5.jpg"
+      ],
+      "name": "OnePlus U1S 164 cm",
+      "price": 69999,
+      "discount": 10,
+      "description": "OnePlus U1S 164 cm (65 inch) Ultra HD (4K) LED Smart Android TV  ",
+      
+      "sizeAvailed": "",
+      "sellerId": 9,
+      "sellerName": "TradePLFIPLecom",
+      "details": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube Operating System: Android (Google Assistant & Chromecast in-built) Resolution: Ultra HD (4K) 3840 x 2160 Pixels Sound Output: 30 W Refresh Rate: 60 Hz",
+      "reviews": "4.4",
+      "categoryId": "4"
+      
+    },
+    {
+      "id": 14,
+      "image": "../../../assets/Resourses/Image/TV/Lg/LG 108/1.jpg",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/TV/Lg/LG 108/1.jpg",
+        "../../../assets/Resourses/Image/TV/Lg/LG 108/2.jpg",
+        "../../../assets/Resourses/Image/TV/Lg/LG 108/3.jpg",
+        "../../../assets/Resourses/Image/TV/Lg/LG 108/4.jpg",
+        "../../../assets/Resourses/Image/TV/Lg/LG 108/5.jpg"
+      ],
+      "name": "LG 108 cm",
+      "price": 59990,
+      "discount": 45,
+      "description": "LG 108 cm (43 inch) Ultra HD (4K) LED Smart TV  (43UP7500PTZ) ",
+      
+      "sizeAvailed": "",
+      "sellerId": 10,
+      "sellerName": "IWQNBecommerce",
+      "details": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube Operating System: WebOS      Resolution: Ultra HD (4K) 3840 x 2160 Pixels      Sound Output: 20 W      Refresh Rate: 60 Hz",
+      "reviews": "4.5",
+      "categoryId": "4"
+      
+    },
+    {
+      "id": 15,
+      "image": "../../../assets/Resourses/Image/TV/Samsung/Samsung_138_crystal/1.jpg",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/TV/Samsung/Samsung_138_crystal/1.jpg",
+        "../../../assets/Resourses/Image/TV/Samsung/Samsung_138_crystal/2.jpg",
+        "../../../assets/Resourses/Image/TV/Samsung/Samsung_138_crystal/3.jpg",
+        "../../../assets/Resourses/Image/TV/Samsung/Samsung_138_crystal/4.jpg",
+        "../../../assets/Resourses/Image/TV/Samsung/Samsung_138_crystal/5.jpg"
+      ],
+      "name": "SAMSUNG Crystal 138 cm",
+      "price": 49990,
+      "discount": 28,
+      "description": "SAMSUNG Crystal 4K 138 cm (55 inch) Ultra HD (4K) LED Smart TV  (UA55AUE60AKLXL)",
+      
+      "sizeAvailed": "",
+      "sellerId": 9,
+      "sellerName": "TradePLFIPLecom",
+      "details": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube Operating System: WebOS      Resolution: Ultra HD (4K) 3840 x 2160 Pixels      Sound Output: 20 W      Refresh Rate: 60 Hz",
+      "reviews": "4.3",
+      "categoryId": "4"
+      
+    },
+    {
+      "id": 16,
+      "image": "../../../assets/Resourses/Image/TV/Mi/Mi_TV_138/1.jpg",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/TV/Mi/Mi_TV_138/1.jpg",
+        "../../../assets/Resourses/Image/TV/Mi/Mi_TV_138/2.jpg",
+        "../../../assets/Resourses/Image/TV/Mi/Mi_TV_138/3.jpg",
+        "../../../assets/Resourses/Image/TV/Mi/Mi_TV_138/4.jpg",
+        "../../../assets/Resourses/Image/TV/Mi/Mi_TV_138/5.jpg"
+      ],
+      "name": "Mi 5X 138.8 cm",
+      "price": 46999,
+      "discount": 32,
+      "description": "Mi 5X 138.8 cm (55 inch) Ultra HD (4K) LED Smart Android TV with Dolby Atmos and Dolby Vision",
+      
+      "sizeAvailed": "",
+      "sellerId": 10,
+      "sellerName": "IWQNBecommerce",
+      "details": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube Operating System: WebOS      Resolution: Ultra HD (4K) 3840 x 2160 Pixels      Sound Output: 20 W      Refresh Rate: 60 Hz",
+      "reviews": "4.5",
+      "categoryId": "4"
+      
     }
   ],
   "category": [
     {
       "id": 1,
-      "name": "T Shirt"
+      "name": "T-Shirt"
     },
     {
       "id": 2,
@@ -476,6 +606,10 @@
     {
       "id": 3,
       "name": "Shirt"
+    },
+    {
+      "id": 4,
+      "name": "Electronics"
     }
   ],
   "profile": {
