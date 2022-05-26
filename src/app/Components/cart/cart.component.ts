@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { throttleTime } from 'rxjs';
 import { CartService } from 'src/app/Services/cart.service';
 import { JsonServerService } from 'src/app/Services/json-server.service';
+import { MessageService } from 'src/app/Services/message.service';
 import { CartProduct } from '../Model/CartProduct';
 import { Product } from '../Model/Product';
 import { Seller } from '../Model/seller';
@@ -17,7 +18,8 @@ import { User } from '../Model/User';
 export class CartComponent implements OnInit {
 
   constructor(private jsonServer: JsonServerService,
-    private router :Router
+    private router :Router,
+    private messageService:MessageService
     ) {
 
   }
@@ -42,7 +44,8 @@ export class CartComponent implements OnInit {
     ExtraImages: [],
     categoryId: 0,
     color: '',
-    brand: ''
+    brand: '',
+    discountPrice: 0
   }
   totalPrice:number =0
   totalPriceAfterAddingDeliveryCharges:number=0
@@ -79,6 +82,8 @@ export class CartComponent implements OnInit {
   productSize:any
   NoProductFlag:boolean = false
 
+ 
+
   ngOnInit(): void {
 
     
@@ -87,7 +92,10 @@ export class CartComponent implements OnInit {
     //   this.user = user
     //   this.cartProduct.userid = user.id
       
-    // })
+    
+
+    if(this.messageService.OrderPlacedFlag== false){
+
     this.jsonServer.getUser(sessionStorage.getItem('userid')).subscribe((user: User) => {
       this.user = user
       this.cartProduct.userid = user.id
@@ -114,9 +122,14 @@ export class CartComponent implements OnInit {
     this.totalPriceAfterAddingDeliveryCharges = this.totalPrice+50
     
     }, 1200);
-
+  }
+  else if(this.messageService.OrderPlacedFlag== true){
+    this.products=[]
     
   }
+
+  
+}
 
   RemoveItemFromCart(id:any){
    
@@ -127,6 +140,7 @@ export class CartComponent implements OnInit {
       this.RefreshPage()
   })
   }
+
 
   RefreshPage(){
 
@@ -232,7 +246,7 @@ export class CartComponent implements OnInit {
   PlaceOrder(){
     console.log(this.cartProduct)
     this.cartProduct.products.forEach(product =>{
-      if(product.sizeAvailed == ''){
+      if(this.product.categoryId == 1 ||this.product.categoryId == 1 && product.sizeAvailed == ''){
         alert("Please Select Size")
         
       }
@@ -243,7 +257,13 @@ export class CartComponent implements OnInit {
           this.jsonServer.putSeller(seller).subscribe((sellerVal)=>{
             console.log(sellerVal)
           })
-          console.log("After Pushed")
+          this.messageService.OrderPlacedFlag=true
+          console.log(this.messageService.OrderPlacedFlag)
+          this.user.cart=[]
+
+          this.jsonServer.putUser(this.user).subscribe(user=>{
+            console.log(user)
+          })
           this.router.navigateByUrl("/orderPlaced")
       })
      })

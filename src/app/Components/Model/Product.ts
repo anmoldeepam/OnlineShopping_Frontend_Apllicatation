@@ -5,6 +5,7 @@ export interface Product{
     name:string
     price:number
     discount:number
+    discountPrice:number
     description:string
     offers:string
     size:string[]

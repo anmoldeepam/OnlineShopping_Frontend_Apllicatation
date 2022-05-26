@@ -10,6 +10,8 @@ export class MessageService {
 
   searchValue = new Subject<string>();
 
+  OrderPlacedFlag:boolean = false
+
   constructor() { }
 
   ShowMessage(){

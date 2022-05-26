@@ -98,5 +98,20 @@ export class HomeComponent implements OnInit {
   TopOffer(){
     this.router.navigateByUrl('/topoffer')
   }
+  Grocery(){
+    this.router.navigateByUrl('/grocery')
+  }
+  Electronics(){
+    this.router.navigateByUrl('/electronics')
+  }
+  Fashion(){
+    this.router.navigateByUrl('/fashion')
+  }
+  Mobiles(){
+    this.router.navigateByUrl('/mobiles')
+  }
+  HomeProducts(){
+    this.router.navigateByUrl('/homeProducts')
+  }
 
 }

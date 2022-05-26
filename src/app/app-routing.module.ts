@@ -2,8 +2,13 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CartComponent } from './Components/cart/cart.component';
 import { DetailsComponent } from './Components/details/details.component';
+import { ElectronicsComponent } from './Components/electronics/electronics.component';
+import { FashionComponent } from './Components/fashion/fashion.component';
+import { GroceryComponent } from './Components/grocery/grocery.component';
+import { HomeNeededProductComponent } from './Components/home-needed-product/home-needed-product.component';
 import { HomeComponent } from './Components/home/home.component';
 import { LoginComponent } from './Components/login/login.component';
+import { MobileComponent } from './Components/mobile/mobile.component';
 import { OrderPlacedComponent } from './Components/order-placed/order-placed.component';
 import { ReleasedComponent } from './Components/released/released.component';
 import { SearchProductComponent } from './Components/search-product/search-product.component';
@@ -28,10 +33,6 @@ const routes: Routes = [
     component:DetailsComponent
   },
   {
-    path:'Released',
-    component:ReleasedComponent
-  },
-  {
     path:'cart',
     component:CartComponent
   },
@@ -54,7 +55,29 @@ const routes: Routes = [
   {
     path:'search/:searchValue',
     component:SearchProductComponent
-  }
+  },
+  {
+    path:'grocery',
+    component:GroceryComponent
+  },
+  {
+    path:'electronics',
+    component:ElectronicsComponent
+  },
+  {
+    path:'fashion',
+    component:FashionComponent
+  },
+  {
+    path:'mobiles',
+    component:MobileComponent
+  },
+  {
+    path:'homeProducts',
+    component:HomeNeededProductComponent
+  },
+  
+
 ];
 
 @NgModule({

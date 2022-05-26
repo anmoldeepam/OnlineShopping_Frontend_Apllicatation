@@ -23,6 +23,11 @@ import { TopOfferComponent } from './Components/top-offer/top-offer.component';
 import { OrderPlacedComponent } from './Components/order-placed/order-placed.component';
 import { LogoutComponent } from './Components/logout/logout.component';
 import { SearchProductComponent } from './Components/search-product/search-product.component';
+import { GroceryComponent } from './Components/grocery/grocery.component';
+import { FashionComponent } from './Components/fashion/fashion.component';
+import { MobileComponent } from './Components/mobile/mobile.component';
+import { HomeNeededProductComponent } from './Components/home-needed-product/home-needed-product.component';
+import { ElectronicsComponent } from './Components/electronics/electronics.component';
 
 
 @NgModule({
@@ -38,7 +43,12 @@ import { SearchProductComponent } from './Components/search-product/search-produ
     TopOfferComponent,
     OrderPlacedComponent,
     LogoutComponent,
-    SearchProductComponent
+    SearchProductComponent,
+    GroceryComponent,
+    FashionComponent,
+    MobileComponent,
+    HomeNeededProductComponent,
+    ElectronicsComponent
     
   ],
   imports: [

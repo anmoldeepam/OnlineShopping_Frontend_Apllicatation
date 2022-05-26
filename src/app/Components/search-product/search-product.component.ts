@@ -41,7 +41,8 @@ export class SearchProductComponent implements OnInit {
     QandA: '',
     cart: [],
     color: '',
-    brand: ''
+    brand: '',
+    discountPrice: 0
   }
 
   searchName: string = ''

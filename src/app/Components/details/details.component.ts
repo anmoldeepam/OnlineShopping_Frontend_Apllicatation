@@ -35,7 +35,8 @@ export class DetailsComponent implements OnInit {
       cart: [],
       categoryId: 0,
       color: '',
-      brand: ''
+      brand: '',
+      discountPrice: 0
     }
     offerPrice!:any
     productSize!:string[]
@@ -68,7 +69,7 @@ export class DetailsComponent implements OnInit {
 
   AddToCart(product:any){
     console.log(this.product.sizeAvailed)
-    if(this.product.sizeAvailed==''){
+    if(this.product.categoryId == 1 ||this.product.categoryId == 1 && this.product.sizeAvailed==''){
       alert("Select a size")
     }
     console.log(this.product)

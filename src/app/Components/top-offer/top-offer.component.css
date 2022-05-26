@@ -1,0 +1,64 @@
+.card-img-top {
+    width: 100%;
+    height: 22vw;
+    background: black;
+}
+.card {
+    
+    padding :20px 20px 0px 20px;
+    box-shadow: 0 0px 20px 0 rgba(210, 202, 202, 0.2);
+    margin: 20px 20px 0px 0px;
+    transition: 0.3s;
+    
+}
+
+
+    
+.row{
+     align-items: center;
+ }
+
+
+ .FilterColor{
+    padding-left:5px ;
+}
+.filterChekbox{
+    padding-left: 10px;
+}
+
+.filterColumn{
+    border: 1px solid grey;
+    padding-left: 15px;
+}
+
+.filterColumn >span{
+   
+   padding-left: 10px;
+} 
+
+.Headings{
+   font-size: medium;
+   font-weight: 700;
+   margin-bottom: 5px;
+}
+
+.FilterOptions{
+   font-size: medium; 
+   font-weight: 700;
+   margin-bottom: 10px;
+   margin-top: 10px; 
+   color: blue;
+}
+
+.form-check-input {
+    position: relative; 
+    margin-top: 0rem;
+    margin-left: 0rem;
+}
+.noProduct{
+    padding-top: 30px;
+    text-align: center;
+    
+    color: blue;
+    font-size: medium;
+}
