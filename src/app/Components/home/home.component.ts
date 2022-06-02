@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
    products!:Product[];
    userId!:any
    user!:User
+   discountPrice:any
    
 
   constructor(
@@ -37,7 +38,12 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.jsonServer.getProducts().subscribe((product)=>{
     this.products=product
-    console.log(product)
+    product.forEach(prod=>{
+      this.discountPrice=(prod.price - (prod.price*(prod.discount/100))).toFixed()
+      prod.discountPrice=this.discountPrice
+      
+    })
+    
     })
 
     
@@ -65,7 +71,7 @@ export class HomeComponent implements OnInit {
    
     // OLD and NEW is down (Localstorage ot Session storage)
     // this.jsonServer.getUser(localStorage.getItem('userid')).subscribe((user:User)=>{ 
-    this.jsonServer.getUser(sessionStorage.getItem('userid')).subscribe((user:User)=>{
+    this.jsonServer.getUserById(sessionStorage.getItem('userid')).subscribe((user:User)=>{
      
       this.user=user
 

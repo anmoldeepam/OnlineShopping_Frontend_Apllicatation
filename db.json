@@ -67,7 +67,8 @@
           "sellerName": "OmniTech Retail",
           "details": "This season set a sporty fashion trend with the HRX Men's Athleisure T-shirt. This striped casual T-shirt can be worn on its own or layered under a jacket or a hoodie.",
           "reviews": "4.1",
-          "categoryId": "1"
+          "categoryId": "1",
+          "address": "39 Mochi colony Behind PLD Bank HArihar 577601"
         }
       ]
     },
@@ -79,7 +80,95 @@
       "products": [
         3
       ],
-      "sellerorder": []
+      "sellerorder": [
+        {
+          "id": 4,
+          "image": "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/4ff84b3f-96cc-4e3c-84e2-b6d5d13e06451548320874372-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-3.jpg",
+          "ExtraImages": [
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/271f9b96-3b40-4330-8ce2-b093af796ac11548320874341-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-5.webp",
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/4ff84b3f-96cc-4e3c-84e2-b6d5d13e06451548320874372-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-3.jpg",
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/c9be0d6e-30a4-4242-b4e0-1c166b73f2781548320874402-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-1.webp",
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/e4fa716f-3181-4c3b-8f35-0d30fc5ff45d1548320874385-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-2.jpg"
+          ],
+          "name": "HereAndNow TShirt",
+          "price": 580,
+          "discount": 15,
+          "discountPrice": 493,
+          "description": "HERENOW Men Navy Polo Collar Cotton Pure Cotton T-shirt",
+          "size": [
+            "XS",
+            "S",
+            "XL",
+            "XXL"
+          ],
+          "sizeAvailed": "S",
+          "sellerId": 3,
+          "sellerName": "truenet Commerce",
+          "details": "Navy blue solid T-shirt, has a polo collar, short sleeves",
+          "reviews": "3.9",
+          "categoryId": "1",
+          "color": "Blue",
+          "address": "39 Mochi Colony Behind PLD Bank Harihar Harihar 577601"
+        },
+        {
+          "id": 4,
+          "image": "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/4ff84b3f-96cc-4e3c-84e2-b6d5d13e06451548320874372-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-3.jpg",
+          "ExtraImages": [
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/271f9b96-3b40-4330-8ce2-b093af796ac11548320874341-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-5.webp",
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/4ff84b3f-96cc-4e3c-84e2-b6d5d13e06451548320874372-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-3.jpg",
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/c9be0d6e-30a4-4242-b4e0-1c166b73f2781548320874402-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-1.webp",
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/e4fa716f-3181-4c3b-8f35-0d30fc5ff45d1548320874385-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-2.jpg"
+          ],
+          "name": "HereAndNow TShirt",
+          "price": 580,
+          "discount": 15,
+          "discountPrice": 493,
+          "description": "HERENOW Men Navy Polo Collar Cotton Pure Cotton T-shirt",
+          "size": [
+            "XS",
+            "S",
+            "XL",
+            "XXL"
+          ],
+          "sizeAvailed": "XXL",
+          "sellerId": 3,
+          "sellerName": "truenet Commerce",
+          "details": "Navy blue solid T-shirt, has a polo collar, short sleeves",
+          "reviews": "3.9",
+          "categoryId": "1",
+          "color": "Blue",
+          "address": "39 Davangere  577601"
+        },
+        {
+          "id": 4,
+          "image": "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/4ff84b3f-96cc-4e3c-84e2-b6d5d13e06451548320874372-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-3.jpg",
+          "ExtraImages": [
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/271f9b96-3b40-4330-8ce2-b093af796ac11548320874341-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-5.webp",
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/4ff84b3f-96cc-4e3c-84e2-b6d5d13e06451548320874372-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-3.jpg",
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/c9be0d6e-30a4-4242-b4e0-1c166b73f2781548320874402-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-1.webp",
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/e4fa716f-3181-4c3b-8f35-0d30fc5ff45d1548320874385-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-2.jpg"
+          ],
+          "name": "HereAndNow TShirt",
+          "price": 580,
+          "discount": 15,
+          "discountPrice": 493,
+          "description": "HERENOW Men Navy Polo Collar Cotton Pure Cotton T-shirt",
+          "size": [
+            "XS",
+            "S",
+            "XL",
+            "XXL"
+          ],
+          "sizeAvailed": "S",
+          "sellerId": 3,
+          "sellerName": "truenet Commerce",
+          "details": "Navy blue solid T-shirt, has a polo collar, short sleeves",
+          "reviews": "3.9",
+          "categoryId": "1",
+          "color": "Blue",
+          "address": "39 Davangere  577601"
+        }
+      ]
     },
     {
       "id": 4,
@@ -107,7 +196,8 @@
           "sellerName": "TradePLFIPLecom",
           "details": "4 GB RAM | 64 GB ROM | Expandable Upto 256 GB 16.51 cm (6.5 inch) HD+ Display 50MP + 2MP + 2MP | 8MP Front Camera 6000 mAh Battery MediaTek Helio G85 Processor that lets you play intense games and binge-watch favourite shows. This smartphone features a 6000 mAh Battery and 18W Quick Charge for uninterrupted performance, and a 50 MP AI Triple Camera to click beautiful photos.",
           "reviews": "4.4",
-          "categoryId": "2"
+          "categoryId": "2",
+          "address": "39 Mochi colony Behind PLD Bank HArihar 577601"
         }
       ]
     },
@@ -146,6 +236,7 @@
           "name": "HIGHLANDER Shirt",
           "price": 1049,
           "discount": 50,
+          "discountPrice": 525,
           "description": "Men Green & White Slim Fit Printed Casual Shirt",
           "size": [
             "38",
@@ -154,12 +245,14 @@
             "44",
             "46"
           ],
-          "sizeAvailed": "44",
+          "sizeAvailed": "40",
           "sellerId": 7,
           "sellerName": "FlashStar Commerce",
           "details": "Green and White printed casual shirt, has a spread collar, short sleeves, button placket, curved hem, and 1 patch pocket",
           "reviews": "4.2",
-          "categoryId": "3"
+          "categoryId": "3",
+          "color": "Green",
+          "address": "39 Mochi colony Behind PLD Bank HArihar 577601"
         }
       ]
     },
@@ -210,6 +303,14 @@
       "password": "KUNALPRINTS",
       "products": [],
       "sellerorder": []
+    },
+    {
+      "id": 14,
+      "sellerName": "Decathlon Sports India Pvt. Ltd.",
+      "email": "Decathlon@gmail.com",
+      "password": "Decathlon",
+      "products": [],
+      "sellerorder": []
     }
   ],
   "User": [
@@ -217,20 +318,126 @@
       "id": 1,
       "userName": "sam@gmail.com",
       "userPassword": "sam",
+      "name": "Sam",
+      "gender": "Male",
+      "mobilenumber": "1234567899",
       "cart": [
         "2",
         "10"
       ],
-      "address": "",
-      "sizeAvailed": ""
+      "address": [
+        "39 Mochi colony Behind PLD Bank Harihar 577601"
+      ],
+      "sizeAvailed": "",
+      "orders": []
     },
     {
       "id": 2,
       "userName": "anmol@gmail.com",
       "userPassword": "anmol",
-      "cart": [],
-      "address": "",
-      "sizeAvailed": ""
+      "name": "Anmol",
+      "gender": "Male",
+      "mobilenumber": "1234567890",
+      "cart": [
+        "2"
+      ],
+      "address": [
+        {
+          "DoorNo": "39",
+          "Address": "Davangere ",
+          "Pincode": "577601"
+        }
+      ],
+      "sizeAvailed": "",
+      "orders": [
+        {
+          "id": 10,
+          "image": "../../../assets/Resourses/Image/Shirt/Highlander/1.webp",
+          "ExtraImages": [
+            "../../../assets/Resourses/Image/Shirt/Highlander/1.webp",
+            "../../../assets/Resourses/Image/Shirt/Highlander/2.jpg",
+            "../../../assets/Resourses/Image/Shirt/Highlander/3.webp",
+            "../../../assets/Resourses/Image/Shirt/Highlander/4.webp"
+          ],
+          "name": "HIGHLANDER Shirt",
+          "price": 1049,
+          "discount": 50,
+          "discountPrice": 525,
+          "description": "Men Green & White Slim Fit Printed Casual Shirt",
+          "size": [
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          "sizeAvailed": "",
+          "sellerId": 7,
+          "sellerName": "FlashStar Commerce",
+          "details": "Green and White printed casual shirt, has a spread collar, short sleeves, button placket, curved hem, and 1 patch pocket",
+          "reviews": "4.2",
+          "categoryId": "3",
+          "color": "Green"
+        },
+        {
+          "id": 10,
+          "image": "../../../assets/Resourses/Image/Shirt/Highlander/1.webp",
+          "ExtraImages": [
+            "../../../assets/Resourses/Image/Shirt/Highlander/1.webp",
+            "../../../assets/Resourses/Image/Shirt/Highlander/2.jpg",
+            "../../../assets/Resourses/Image/Shirt/Highlander/3.webp",
+            "../../../assets/Resourses/Image/Shirt/Highlander/4.webp"
+          ],
+          "name": "HIGHLANDER Shirt",
+          "price": 1049,
+          "discount": 50,
+          "discountPrice": 525,
+          "description": "Men Green & White Slim Fit Printed Casual Shirt",
+          "size": [
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          "sizeAvailed": "40",
+          "sellerId": 7,
+          "sellerName": "FlashStar Commerce",
+          "details": "Green and White printed casual shirt, has a spread collar, short sleeves, button placket, curved hem, and 1 patch pocket",
+          "reviews": "4.2",
+          "categoryId": "3",
+          "color": "Green"
+        },
+        {
+          "id": 4,
+          "image": "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/4ff84b3f-96cc-4e3c-84e2-b6d5d13e06451548320874372-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-3.jpg",
+          "ExtraImages": [
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/271f9b96-3b40-4330-8ce2-b093af796ac11548320874341-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-5.webp",
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/4ff84b3f-96cc-4e3c-84e2-b6d5d13e06451548320874372-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-3.jpg",
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/c9be0d6e-30a4-4242-b4e0-1c166b73f2781548320874402-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-1.webp",
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/e4fa716f-3181-4c3b-8f35-0d30fc5ff45d1548320874385-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-2.jpg"
+          ],
+          "name": "HereAndNow TShirt",
+          "price": 580,
+          "discount": 15,
+          "discountPrice": 493,
+          "description": "HERENOW Men Navy Polo Collar Cotton Pure Cotton T-shirt",
+          "size": [
+            "XS",
+            "S",
+            "XL",
+            "XXL"
+          ],
+          "sizeAvailed": "S",
+          "sellerId": 3,
+          "sellerName": "truenet Commerce",
+          "details": "Navy blue solid T-shirt, has a polo collar, short sleeves",
+          "reviews": "3.9",
+          "categoryId": "1",
+          "color": "Blue",
+          "address": "39 Mochi Colony Behind PLD Bank Harihar Harihar 577601"
+        }
+      ]
     },
     {
       "id": 3
@@ -248,6 +455,7 @@
       "name": "Puma TShirt",
       "price": 500,
       "discount": 10,
+      "discountPrice": 450,
       "description": "Men White & Grey Graphic Printed T-shirt",
       "size": [
         "XS",
@@ -274,6 +482,7 @@
       "name": "HRX by Hrithik Roshan TShirt",
       "price": 410,
       "discount": 5,
+      "discountPrice": 390,
       "description": "Men Teal Blue Printed Pure Cotton T-shirt",
       "size": [
         "XS",
@@ -303,6 +512,7 @@
       "name": "Roadster TShirt",
       "price": 174,
       "discount": 10,
+      "discountPrice": 157,
       "description": "Men Navy Blue Varsity Printed Cotton T-shirt",
       "size": [
         "XS",
@@ -330,6 +540,7 @@
       "name": "HereAndNow TShirt",
       "price": 580,
       "discount": 15,
+      "discountPrice": 493,
       "description": "HERENOW Men Navy Polo Collar Cotton Pure Cotton T-shirt",
       "size": [
         "XS",
@@ -358,6 +569,7 @@
       "name": "POCO C31 (Royal Blue, 32 GB)  (3 GB RAM)",
       "price": 10999,
       "discount": 15,
+      "discountPrice": 9350,
       "description": "Handset, Power Adapter, Micro-USB Cable.",
       "size": [],
       "sizeAvailed": "",
@@ -365,7 +577,8 @@
       "sellerName": "Truenet Commerce",
       "details": "3 GB RAM | 32 GB ROM | Expandable Upto 512 GB 16.59 cm (6.53 inch) HD+ Display 13MP + 2MP + 2MP | 5MP Front Camera 5000 mAh Lithium-ion Polymer Battery MediaTek Helio G35 Processor",
       "reviews": "4.4",
-      "categoryId": "2"
+      "categoryId": "2",
+      "color": "Blue"
     },
     {
       "id": 6,
@@ -379,6 +592,7 @@
       "name": "realme Narzo 50A (Oxygen Blue, 64 GB)  (4 GB RAM)",
       "price": 12999,
       "discount": 10,
+      "discountPrice": 11700,
       "description": "Equipped with a Helio G85 Gaming Processor. ",
       "size": [],
       "sizeAvailed": "",
@@ -386,7 +600,8 @@
       "sellerName": "TradePLFIPLecom",
       "details": "4 GB RAM | 64 GB ROM | Expandable Upto 256 GB 16.51 cm (6.5 inch) HD+ Display 50MP + 2MP + 2MP | 8MP Front Camera 6000 mAh Battery MediaTek Helio G85 Processor that lets you play intense games and binge-watch favourite shows. This smartphone features a 6000 mAh Battery and 18W Quick Charge for uninterrupted performance, and a 50 MP AI Triple Camera to click beautiful photos.",
       "reviews": "4.4",
-      "categoryId": "2"
+      "categoryId": "2",
+      "color": "Blue"
     },
     {
       "id": 7,
@@ -400,6 +615,7 @@
       "name": "MOTOROLA G60 (Moonless, 128 GB)  (6 GB RAM)",
       "price": 21999,
       "discount": 27,
+      "discountPrice": 16060,
       "description": "Handset, Charger, USB Cable, User Guides",
       "size": [],
       "sizeAvailed": "",
@@ -407,7 +623,8 @@
       "sellerName": "TREASURE HAUL ONLINE",
       "details": "6 GB RAM | 128 GB ROM 17.22 cm (6.78 inch) Full HD+ Display 108MP + 8MP + 2MP | 32MP Front Camera 6000 mAh Battery Qualcomm Snapdragon 732G Processor 120Hz Refresh Rate Stock Android Experience",
       "reviews": "4.2",
-      "categoryId": "2"
+      "categoryId": "2",
+      "color": "Black"
     },
     {
       "id": 8,
@@ -421,6 +638,7 @@
       "name": "SAMSUNG Galaxy F22 (Denim Blue, 64 GB)  (4 GB RAM)",
       "price": 11999,
       "discount": 27,
+      "discountPrice": 8760,
       "description": "Bid goodbye to screen stuttering, Samsung F22",
       "size": [],
       "sizeAvailed": "",
@@ -428,7 +646,8 @@
       "sellerName": "TrueComRetail",
       "details": "6 GB RAM | 128 GB ROM 17.22 cm (6.78 inch) Full HD+ Display 108MP + 8MP + 2MP | 32MP Front Camera 6000 mAh Battery Qualcomm Snapdragon 732G Processor 120Hz Refresh Rate Stock Android Experience   Bid goodbye to screen stuttering, poor display quality, and low-resolution photos by getting your hands on the Samsung Galaxy F22 smartphone. Featuring a 90 Hz refresh rate, HD+ sAMOLED display, and True 48 MP quad-rear camera, this smartphone is sure to be your ideal companion for entertainment, gaming, and communication. What's more, its 6000 mAh battery ensures that a full charge can last for an entire day.",
       "reviews": "4.3",
-      "categoryId": "2"
+      "categoryId": "2",
+      "color": "Blue"
     },
     {
       "id": 9,
@@ -442,6 +661,7 @@
       "name": "Roadster Shirt",
       "price": 1499,
       "discount": 50,
+      "discountPrice": 750,
       "description": "Men Black & Grey Checked Casual Sustainable Shirt",
       "size": [
         "38",
@@ -469,6 +689,7 @@
       "name": "HIGHLANDER Shirt",
       "price": 1049,
       "discount": 50,
+      "discountPrice": 525,
       "description": "Men Green & White Slim Fit Printed Casual Shirt",
       "size": [
         "38",
@@ -497,6 +718,7 @@
       "name": "Dennis Lingo Shirt",
       "price": 1849,
       "discount": 63,
+      "discountPrice": 685,
       "description": "Men Pink Slim Fit Casual Shirt",
       "size": [
         "38",
@@ -524,6 +746,7 @@
       "name": "WROGN Shirt",
       "price": 2499,
       "discount": 55,
+      "discountPrice": 1125,
       "description": "Navy Blue Slim Fit Checked Casual Shirt",
       "size": [
         "38",
@@ -553,13 +776,15 @@
       "name": "OnePlus U1S 164 cm",
       "price": 69999,
       "discount": 10,
+      "discountPrice": 63000,
       "description": "OnePlus U1S 164 cm (65 inch) Ultra HD (4K) LED Smart Android TV  ",
       "sizeAvailed": "",
       "sellerId": 9,
       "sellerName": "TradePLFIPLecom",
       "details": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube Operating System: Android (Google Assistant & Chromecast in-built) Resolution: Ultra HD (4K) 3840 x 2160 Pixels Sound Output: 30 W Refresh Rate: 60 Hz",
       "reviews": "4.4",
-      "categoryId": "4"
+      "categoryId": "4",
+      "color": "Black"
     },
     {
       "id": 14,
@@ -574,13 +799,15 @@
       "name": "LG 108 cm",
       "price": 59990,
       "discount": 45,
+      "discountPrice": 32995,
       "description": "LG 108 cm (43 inch) Ultra HD (4K) LED Smart TV  (43UP7500PTZ) ",
       "sizeAvailed": "",
       "sellerId": 10,
       "sellerName": "IWQNBecommerce",
       "details": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube Operating System: WebOS      Resolution: Ultra HD (4K) 3840 x 2160 Pixels      Sound Output: 20 W      Refresh Rate: 60 Hz",
       "reviews": "4.5",
-      "categoryId": "4"
+      "categoryId": "4",
+      "color": "Black"
     },
     {
       "id": 15,
@@ -595,13 +822,15 @@
       "name": "SAMSUNG Crystal 138 cm",
       "price": 49990,
       "discount": 28,
+      "discountPrice": 35993,
       "description": "SAMSUNG Crystal 4K 138 cm (55 inch) Ultra HD (4K) LED Smart TV  (UA55AUE60AKLXL)",
       "sizeAvailed": "",
       "sellerId": 9,
       "sellerName": "TradePLFIPLecom",
       "details": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube Operating System: WebOS      Resolution: Ultra HD (4K) 3840 x 2160 Pixels      Sound Output: 20 W      Refresh Rate: 60 Hz",
       "reviews": "4.3",
-      "categoryId": "4"
+      "categoryId": "4",
+      "color": "Black"
     },
     {
       "id": 16,
@@ -616,13 +845,15 @@
       "name": "Mi 5X 138.8 cm",
       "price": 46999,
       "discount": 32,
+      "discountPrice": 31960,
       "description": "Mi 5X 138.8 cm (55 inch) Ultra HD (4K) LED Smart Android TV with Dolby Atmos and Dolby Vision",
       "sizeAvailed": "",
       "sellerId": 10,
       "sellerName": "IWQNBecommerce",
       "details": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube Operating System: WebOS      Resolution: Ultra HD (4K) 3840 x 2160 Pixels      Sound Output: 20 W      Refresh Rate: 60 Hz",
       "reviews": "4.5",
-      "categoryId": "4"
+      "categoryId": "4",
+      "color": "Black"
     },
     {
       "id": 17,
@@ -635,13 +866,15 @@
       "name": "Maggi",
       "price": 168,
       "discount": 12,
+      "discountPrice": 148,
       "description": " Maggi Mega Pack Masala Instant Noodles Vegetarian  (12 x 70 g)",
       "sizeAvailed": "",
       "sellerId": 11,
       "sellerName": "SuperComNet",
       "details": "Relish a piping hot bowl of the Maggi Masala instant noodles and savour the taste of its iconic flavour with your friends and family. It contains tasty ingredients and spices to help you rustle up a delicious meal in minutes and satisfy your hunger pangs.",
       "reviews": "4.5",
-      "categoryId": "5"
+      "categoryId": "5",
+      "color":""
     },
     {
       "id": 18,
@@ -654,13 +887,15 @@
       "name": "Pillsbury Atta",
       "price": 395,
       "discount": 21,
+      "discountPrice": 312,
       "description": "Pillsbury Chakki Fresh Atta  (10 kg)",
       "sizeAvailed": "",
       "sellerId": 11,
       "sellerName": "SuperComNet",
       "details": "Pillsbury Chakki Fresh Atta  (10 kg)",
       "reviews": "4.3",
-      "categoryId": "5"
+      "categoryId": "5",
+      "color":""
     },
     {
       "id": 19,
@@ -674,13 +909,15 @@
       "name": "Thums Up",
       "price": 99,
       "discount": 10,
+      "discountPrice": 89,
       "description": "Thums Up Soft Drink Bottle PET Bottle  (2.25 L)",
       "sizeAvailed": "",
       "sellerId": 11,
       "sellerName": "SuperComNet",
       "details": "Bring out your adventurous side with the Thums Up soft drink. This drink is for those who enjoy an intense combination in an exciting cold drink.      For the Adventurous     If you’re an adventure seeker, Thums Up is the ideal drink for you as it defines the character of a person who loves to live life on the edge.",
       "reviews": "4.4",
-      "categoryId": "5"
+      "categoryId": "5",
+      "color":""
     },
     {
       "id": 20,
@@ -694,13 +931,15 @@
       "name": "Fortune Rice Bran Oil",
       "price": 189,
       "discount": 16,
+      "discountPrice": 158,
       "description": "Fortune Rice Bran Oil Pouch  (1 L)",
       "sizeAvailed": "",
       "sellerId": 11,
       "sellerName": "SuperComNet",
       "details": " Fortune Rice Bran Health Oil is 100% Physically Refined Rice Bran Oil which is Rich in Gamma Oryzanol. It helps in reducing Bad Cholesterol & increases Good Cholesterol which is beneficial for your heart health. Along with Vitamin A/D/E it is rich in Natural Antioxidants which boosts immunity and gives many other health benefits to every member of the family.",
       "reviews": "4.5",
-      "categoryId": "5"
+      "categoryId": "5",
+      "color":""
     },
     {
       "id": 21,
@@ -713,13 +952,15 @@
       "name": "IWS 144 Double Bedsheet",
       "price": 1199,
       "discount": 80,
+      "discountPrice": 240,
       "description": "IWS 144 TC Microfiber Double 3D Printed Bedsheet  (Pack of 1, Multicolor)",
       "sizeAvailed": "",
       "sellerId": 12,
       "sellerName": "Brands Ville",
       "details": "With 10 years of experience in the furnishings industry IWS present these 3d printed bedsheets which are more rich in colors as shown in the picture. They are home washable and is guaranteed for quality and durability. The product is designed to totally redefine the aura of your room. A few clicks away ,BUY one to enjoy the brightness in your space.",
       "reviews": "3.8",
-      "categoryId": "6"
+      "categoryId": "6",
+      "color": "Red"
     },
     {
       "id": 22,
@@ -733,13 +974,15 @@
       "name": "SmartBuy Bedsheet",
       "price": 2000,
       "discount": 84,
+      "discountPrice": 320,
       "description": "Flipkart SmartBuy 104 TC Cotton Double Jaipuri Prints Bedsheet  (Pack of 1, Green)",
       "sizeAvailed": "",
       "sellerId": 13,
       "sellerName": "KUNALPRINTS",
       "details": "Flipkart SmartBuy 104 TC Cotton Double Jaipuri Prints Bedsheet  (Pack of 1, Green)",
       "reviews": "4.0",
-      "categoryId": "6"
+      "categoryId": "6",
+      "color": "Green"
     },
     {
       "id": 23,
@@ -753,13 +996,15 @@
       "name": "IWS 144 Bedsheet",
       "price": 1199,
       "discount": 80,
+      "discountPrice": 340,
       "description": "IWS 144 TC Microfiber Double 3D Printed Bedsheet  (Pack of 1, Multicolor)",
       "sizeAvailed": "",
       "sellerId": 12,
       "sellerName": "Brands Ville",
       "details": "With 10 years of experience in the furnishings industry IWS present these 3d printed bedsheets which are more rich in colors as shown in the picture. They are home washable and is guaranteed for quality and durability. The product is designed to totally redefine the aura of your room. A few clicks away ,BUY one to enjoy the brightness in your space.",
       "reviews": "3.8",
-      "categoryId": "6"
+      "categoryId": "6",
+      "color": "Red"
     },
     {
       "id": 24,
@@ -773,13 +1018,255 @@
       "name": "IWS 144 Bedsheet",
       "price": 1199,
       "discount": 81,
+      "discountPrice": 340,
       "description": "IWS 144 TC Microfiber Double Printed Bedsheet  (Pack of 1, Orange, White)",
       "sizeAvailed": "",
       "sellerId": 12,
       "sellerName": "Brands Ville",
       "details": "With 10 years of experience in the furnishings industry IWS present these 3d printed bedsheets which are more rich in colors as shown in the picture. They are home washable and is guaranteed for quality and durability. The product is designed to totally redefine the aura of your room. A few clicks away ,BUY one to enjoy the brightness in your space.",
       "reviews": "3.7",
-      "categoryId": "6"
+      "categoryId": "6",
+      "color": "Orange"
+    },
+    {
+      "id": 25,
+      "image": "../../../assets/Resourses/Image/Bottom-Wear/HighLander/BlackJeans/1.webp",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Bottom-Wear/HighLander/BlackJeans/1.webp",
+        "../../../assets/Resourses/Image/Bottom-Wear/HighLander/BlackJeans/2.webp",
+        "../../../assets/Resourses/Image/Bottom-Wear/HighLander/BlackJeans/3.jpg",
+        "../../../assets/Resourses/Image/Bottom-Wear/HighLander/BlackJeans/4.webp"
+      ],
+      "name": "HIGHLANDER",
+      "price": 1299,
+      "discount": 52,
+      "discountPrice": 623,
+      "description": "Men Black Tapered Fit Mid-Rise Clean Look Stretchable Jeans",
+      "size": [
+        "30",
+        "32",
+        "36",
+        "38"
+      ],
+      "sizeAvailed": "",
+      "sellerId": 7,
+      "sellerName": "FlashStar Commerce",
+      "details": "Black dark wash 5-pocket mid-rise jeans, clean look with no fade, has a button and zip closure, waistband with belt loop ",
+      "reviews": "4.0",
+      "categoryId": "7",
+      "color": "Black"
+    },
+    {
+      "id": 26,
+      "image": "../../../assets/Resourses/Image/Bottom-Wear/Roadster/BlueJeans/1.webp",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Bottom-Wear/Roadster/BlueJeans/1.webp",
+        "../../../assets/Resourses/Image/Bottom-Wear/Roadster/BlueJeans/2.webp",
+        "../../../assets/Resourses/Image/Bottom-Wear/Roadster/BlueJeans/3.webp",
+        "../../../assets/Resourses/Image/Bottom-Wear/Roadster/BlueJeans/4.jpg"
+      ],
+      "name": "Roadster",
+      "price": 1699,
+      "discount": 40,
+      "discountPrice": 1019,
+      "description": "Men Blue Regular Fit Mid-Rise Clean Look Stretchable Jeans",
+      "size": [
+        "28",
+        "30",
+        "32",
+        "34",
+        "36",
+        "38"
+      ],
+      "sizeAvailed": "",
+      "sellerId": 3,
+      "sellerName": "truenet Commerce",
+      "details": "Blue dark wash 5-pocket mid-rise jeans, clean look, heavy fade, has a button and zip closure, and waistband with belt loops ",
+      "reviews": "3.8",
+      "categoryId": "7",
+      "color": "Blue"
+    },
+    {
+      "id": 27,
+      "image": "../../../assets/Resourses/Image/Bottom-Wear/HighLander/GreyJeans/1.webp",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Bottom-Wear/HighLander/GreyJeans/1.webp",
+        "../../../assets/Resourses/Image/Bottom-Wear/HighLander/GreyJeans/2.webp",
+        "../../../assets/Resourses/Image/Bottom-Wear/HighLander/GreyJeans/3.jpg",
+        "../../../assets/Resourses/Image/Bottom-Wear/HighLander/GreyJeans/4.webp"
+      ],
+      "name": "HIGHLANDER",
+      "price": 1299,
+      "discount": 52,
+      "discountPrice": 623,
+      "description": "Men Grey Slim Fit Mid-Rise Clean Look Stretchable Jeans",
+      "size": [
+        "28",
+        "30",
+        "32",
+        "34"
+        
+      ],
+      "sizeAvailed": "",
+      "sellerId": 7,
+      "sellerName": "FlashStar Commerce",
+      "details": "Grey medium wash 5-pocket mid-rise jeans, clean look with light fade, has a button and zip closure, waistband with belt loops",
+      "reviews": "3.8",
+      "categoryId": "7",
+      "color": "Grey"
+    },
+    {
+      "id": 28,
+      "image": "../../../assets/Resourses/Image/Bottom-Wear/Addidas/1.webp",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Bottom-Wear/Addidas/1.webp",
+        "../../../assets/Resourses/Image/Bottom-Wear/Addidas/2.webp",
+        "../../../assets/Resourses/Image/Bottom-Wear/Addidas/3.webp",
+        "../../../assets/Resourses/Image/Bottom-Wear/Addidas/4.jpg",
+        "../../../assets/Resourses/Image/Bottom-Wear/Addidas/5.webp"
+      ],
+      "name": "ADIDAS",
+      "price": 2799,
+      "discount": 0,
+      "discountPrice": 2799,
+      "description": "Men Grey Slim Fit Mid-Rise Clean Look Stretchable Jeans",
+      "size": [
+        "28",
+        "30",
+        "32",
+        "34",
+        "38"
+        
+      ],
+      "sizeAvailed": "",
+      "sellerId": 7,
+      "sellerName": "FlashStar Commerce",
+      "details": "Charcoal  solid joggers Elasticated waistband Drawstring closure 2 Pockets  Full length Doubleknit Gradient cut Side striped detailing Warranty: 3 months Warranty provided by Brand Owner / Manufacturers",
+      "reviews": "4.8",
+      "categoryId": "7",
+      "color": "Grey"
+    },
+    {
+      "id": 29,
+      "image": "../../../assets/Resourses/Image/Shoes/Puma/1.webp",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Shoes/Puma/1.webp",
+        "../../../assets/Resourses/Image/Shoes/Puma/2.webp",
+        "../../../assets/Resourses/Image/Shoes/Puma/3.webp",
+        "../../../assets/Resourses/Image/Shoes/Puma/4.webp",
+        "../../../assets/Resourses/Image/Shoes/Puma/5.jpg"
+      ],
+      "name": "Puma",
+      "price": 5499,
+      "discount": 50,
+      "discountPrice": 2749,
+      "description": "Men Black Mesh Running Shoes",
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+        
+      ],
+      "sizeAvailed": "",
+      "sellerId": 1,
+      "sellerName": "Puma Sports India Pvt LTD",
+      "details": "A pair of black running shoes, has regular Styling, lace-ups detail Mesh upper Cushioned footbed Textured and patterned outsole Warranty: 3 months",
+      "reviews": "4.5",
+      "categoryId": "8",
+      "color": "Black"
+    },
+    {
+      "id": 30,
+      "image": "../../../assets/Resourses/Image/Shoes/Skechers/1.webp",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Shoes/Skechers/1.webp",
+        "../../../assets/Resourses/Image/Shoes/Skechers/2.webp",
+        "../../../assets/Resourses/Image/Shoes/Skechers/3.webp",
+        "../../../assets/Resourses/Image/Shoes/Skechers/4.jpg",
+        "../../../assets/Resourses/Image/Shoes/Skechers/5.webp"
+      ],
+      "name": "Skechers",
+      "price": 8999,
+      "discount": 20,
+      "discountPrice": 7199,
+      "description": "Men Black Max Cushioning Premier Running Shoes",
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "sizeAvailed": "",
+      "sellerId": 11,
+      "sellerName": "SuperComNet",
+      "details": "Upper: Virtually seamless engineered mesh fabric upper provides breathability and comfort  Midsole: Cushioned responsive ULTRA GO comfort platform  Outsole: Lightweight, durable and flexible parametric web outsole provides multi-surface traction Insole: Air Cooled Goga Mat running insole for cooling comfort",
+      "reviews": "4.4",
+      "categoryId": "8",
+      "color": "Black"
+    },
+    {
+      "id": 31,
+      "image": "../../../assets/Resourses/Image/Shoes/Aldo/1.webp",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Shoes/Aldo/1.webp",
+        "../../../assets/Resourses/Image/Shoes/Aldo/2.webp",
+        "../../../assets/Resourses/Image/Shoes/Aldo/3.webp",
+        "../../../assets/Resourses/Image/Shoes/Aldo/4.jpg",
+        "../../../assets/Resourses/Image/Shoes/Aldo/5.webp"
+      ],
+      "name": "ALDO",
+      "price": 8999,
+      "discount": 0,
+      "discountPrice": 8999,
+      "description": "Men Brown Solid Derbys",
+      "size": [
+        "6",
+        "7",
+        "8",
+        "11"
+      ],
+      "sizeAvailed": "",
+      "sellerId": 11,
+      "sellerName": "SuperComNet",
+      "details": "A pair of round toe brown derbys ,has regular styling, Lace-ups detail Synthetic upper Cushioned footbed Textured and patterned outsole Warranty: 1 month",
+      "reviews": "4.8",
+      "categoryId": "8",
+      "color": "Brown"
+    },
+    {
+      "id": 32,
+      "image": "../../../assets/Resourses/Image/Shoes/Decathlon/1.jpg",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Shoes/Decathlon/1.jpg",
+        "../../../assets/Resourses/Image/Shoes/Decathlon/2.webp",
+        "../../../assets/Resourses/Image/Shoes/Decathlon/3.jpg",
+        "../../../assets/Resourses/Image/Shoes/Decathlon/4.jpg"
+        
+      ],
+      "name": "Newfeel By Decathlon",
+      "price": 899,
+      "discount": 0,
+      "discountPrice": 899,
+      "description": "Men Grey Mesh Walking Non-Marking Shoes",
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "sizeAvailed": "",
+      "sellerId": 14,
+      "sellerName": "Decathlon Sports India Pvt. Ltd.",
+      "details": "A pair of grey walking shoes, has regular Styling, lace-ups detail Mesh upper Cushioned footbed Textured and patterned outsole Warranty:",
+      "reviews": "4.2",
+      "categoryId": "8",
+      "color": "Grey"
     }
   ],
   "category": [
@@ -806,6 +1293,14 @@
     {
       "id": 6,
       "name": "Home"
+    },
+    {
+      "id": 7,
+      "name": "BottomWear"
+    },
+    {
+      "id": 8,
+      "name": "Shoes"
     }
   ],
   "profile": {

@@ -46,17 +46,12 @@ export class LoginComponent implements OnInit {
           break;
                 
         }
-      
-        
       }
-
       })
       this.jsonServer.getSellers().subscribe((sellers)=>{
         this.sellers = sellers
         console.log(this.sellers)
-      
           for(let i=0;i<this.sellers.length;i++){
-            
          if(form.value.username==this.sellers[i].email && form.value.password==this.sellers[i].password){
           
           // OLD and NEW is down (Localstorage ot Session storage)
@@ -68,15 +63,11 @@ export class LoginComponent implements OnInit {
           this.router.navigateByUrl('/seller')
           break;
         }
-     
         else{
           this.notloggedIn=true
         }
       }
       })
-        
-      
-
       // this.Users.forEach(user=>{
       //   if(form.value.username==user.userName && form.value.password==user.userPassword){
       //     localStorage.setItem('userid' , '1')

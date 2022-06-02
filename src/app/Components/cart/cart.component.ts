@@ -1,5 +1,6 @@
 import { coerceStringArray } from '@angular/cdk/coercion';
 import { AfterContentInit, Component, DoCheck, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { throttleTime } from 'rxjs';
 import { CartService } from 'src/app/Services/cart.service';
@@ -45,7 +46,8 @@ export class CartComponent implements OnInit {
     categoryId: 0,
     color: '',
     brand: '',
-    discountPrice: 0
+    discountPrice: 0,
+    address: undefined
   }
   totalPrice:number =0
   totalPriceAfterAddingDeliveryCharges:number=0
@@ -81,10 +83,20 @@ export class CartComponent implements OnInit {
 
   productSize:any
   NoProductFlag:boolean = false
-
+  address:any
+  DoorNumber!:string
+  Address!:string
+  Pincode!:string
+  EditAddress!:FormGroup
  
 
   ngOnInit(): void {
+
+    this.EditAddress = new FormGroup({
+      HouseNumber:new FormControl(''),
+      Address:new FormControl(''),
+      Pincode:new FormControl('')
+    })
 
     
 // OLD and NEW is down (Localstorage ot Session storage)
@@ -96,8 +108,16 @@ export class CartComponent implements OnInit {
 
     if(this.messageService.OrderPlacedFlag== false){
 
-    this.jsonServer.getUser(sessionStorage.getItem('userid')).subscribe((user: User) => {
+    this.jsonServer.getUserById(sessionStorage.getItem('userid')).subscribe((user: User) => {
       this.user = user
+      this.user.address.forEach(ele =>{
+       this.address =  ele.DoorNo +" "+ ele.Address +" "+ ele.Pincode
+       this.DoorNumber = ele.DoorNo
+       this.Address = ele.Address
+       this.Pincode = ele.Pincode
+       
+       
+      })
       this.cartProduct.userid = user.id
      // console.log(this.user.cart)
       if(this.user.cart.length == 0){
@@ -112,7 +132,7 @@ export class CartComponent implements OnInit {
           this.productSize = product.size
          this.products.push(product)
           this.cartProduct.products.push(product)
-          this.totalPrice += product.price
+          this.totalPrice += parseInt((product.price - (product.price*(product.discount/100))).toFixed())
           
           //console.log(product)
         })
@@ -149,7 +169,7 @@ export class CartComponent implements OnInit {
       
 //   this.user = user
 // })
-    this.jsonServer.getUser(sessionStorage.getItem('userid')).subscribe((user: User) => {
+    this.jsonServer.getUserById(sessionStorage.getItem('userid')).subscribe((user: User) => {
       
       this.user = user
     })
@@ -246,11 +266,16 @@ export class CartComponent implements OnInit {
   PlaceOrder(){
     console.log(this.cartProduct)
     this.cartProduct.products.forEach(product =>{
-      if(this.product.categoryId == 1 ||this.product.categoryId == 1 && product.sizeAvailed == ''){
+      console.log(product.sizeAvailed)
+      console.log(product.categoryId == 1 || product.categoryId == 3 && product.sizeAvailed == '')
+      if(product.sizeAvailed == '' && product.categoryId == 1 || product.categoryId == 3 ){
         alert("Please Select Size")
         
       }
-      console.log(product)
+      else{
+
+        console.log(product)
+        product.address = this.DoorNumber +" "+this.Address  +" "+ this.Pincode
       this.jsonServer.getSeller(product.sellerId).subscribe((seller)=>{
         console.log("before Ordering")
           seller.sellerorder.push(product)
@@ -259,13 +284,46 @@ export class CartComponent implements OnInit {
           })
           this.messageService.OrderPlacedFlag=true
           console.log(this.messageService.OrderPlacedFlag)
+          this.product.discountPrice = product.discount
           this.user.cart=[]
-
+          console.log(this.product)
+          this.user.orders.push(product)
           this.jsonServer.putUser(this.user).subscribe(user=>{
             console.log(user)
           })
           this.router.navigateByUrl("/orderPlaced")
       })
+      }
      })
+  }
+
+  ChangeAddress(user:User){
+    this.EditAddress.controls['HouseNumber'].setValue(this.DoorNumber)
+    this.EditAddress.controls['Address'].setValue(this.Address)
+    this.EditAddress.controls['Pincode'].setValue(this.Pincode)
+  }
+
+  SubmitChangeAddress(){
+    this.user.address.forEach(ele =>{
+      ele.DoorNo = this.EditAddress.value.HouseNumber
+      ele.Address = this.EditAddress.value.Address
+      ele.Pincode = this.EditAddress.value.Pincode
+
+      this.jsonServer.putUser(this.user).subscribe((user)=>{
+        document.getElementById('CloseButton')?.click()
+         this.jsonServer.getUserById(this.user.id).subscribe((user:User)=>{
+           this.user = user
+           this.user.address.forEach(ele =>{
+            this.address =  ele.DoorNo +" "+ ele.Address +" "+ ele.Pincode
+            this.DoorNumber = ele.DoorNo
+            this.Address = ele.Address
+            this.Pincode = ele.Pincode
+            
+            
+           })
+         })
+      })
+    })
+    
   }
 }

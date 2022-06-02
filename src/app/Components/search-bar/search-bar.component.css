@@ -1,7 +1,7 @@
 
 
 .Search-Bar{
-    background-color: blue;
+    background-color: #2874f0;
 }
 .searchInput{
     padding: 15px;
@@ -11,7 +11,7 @@
 .searchButton{
     border-radius:0 ;
     height: 38px;
-    color: blue;
+    color: #2874f0;
 }
 
 
@@ -21,11 +21,12 @@
 .usernamebutton , .cartbutton{
     height: 38px;
     background-color: white;
-    color: Blue;
+    color: #2874f0;
     border-radius: 0;
     width: 80px;
     text-align: center;
     margin: 0 0 0 0;
+    padding: 6px 6px;
 }
 .CompanyName{
     margin: 0 0 0 0;

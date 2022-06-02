@@ -26,12 +26,12 @@ export class JsonServerService {
     return this.http.get<Product>(`http://localhost:3000/Product/${id}`)
   }
 
-  getUser(userid:any):Observable<any>{
+  getUserById(userid:any):Observable<any>{
     return this.http.get<User>(`http://localhost:3000/User/${userid}`)
   }
 
   putUser(user:User):Observable<any>{
-    console.log(user)
+    
     return this.http.put(`http://localhost:3000/User/${user.id}`,user)
   }
 
@@ -57,5 +57,10 @@ export class JsonServerService {
     getCategoryById(id:any):Observable<category>{
     
       return this.http.get<category>(`http://localhost:3000/category/${id}`)
+    }
+
+    deleteUserOrder(user:User):Observable<any>{
+    
+      return this.http.put(`http://localhost:3000/User/${user.id}`,user)
     }
 }

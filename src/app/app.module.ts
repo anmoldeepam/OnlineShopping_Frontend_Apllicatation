@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http'
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon'
 import {MatTabsModule} from '@angular/material/tabs'
 
@@ -28,6 +28,7 @@ import { FashionComponent } from './Components/fashion/fashion.component';
 import { MobileComponent } from './Components/mobile/mobile.component';
 import { HomeNeededProductComponent } from './Components/home-needed-product/home-needed-product.component';
 import { ElectronicsComponent } from './Components/electronics/electronics.component';
+import { MyAccountComponent } from './Components/my-account/my-account.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { ElectronicsComponent } from './Components/electronics/electronics.compo
     FashionComponent,
     MobileComponent,
     HomeNeededProductComponent,
-    ElectronicsComponent
+    ElectronicsComponent,
+    MyAccountComponent
     
   ],
   imports: [
@@ -61,7 +63,8 @@ import { ElectronicsComponent } from './Components/electronics/electronics.compo
     MatTabsModule,
     MatFormFieldModule,
     GaugeModule.forRoot(),
-    MatSelectModule
+    MatSelectModule,
+    ReactiveFormsModule
 
 
 

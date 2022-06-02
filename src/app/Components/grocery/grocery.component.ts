@@ -83,20 +83,20 @@ export class GroceryComponent implements OnInit {
       })
     }
 
-    else if (
-      event.target.value == "Red" ||
-      event.target.value == "Blue" ||
-      event.target.value == "Green" ||
-      event.target.value == "Yellow" ||
-      event.target.value == "Black"
-    ) {
-      this.products = []
-      this.Allproducts.forEach(Oneproduct => {
-        if (Oneproduct.color.toString() == event.target.value.toString()) {
-          this.products.push(Oneproduct)
-        }
-      })
-    }
+    // else if (
+    //   event.target.value == "Red" ||
+    //   event.target.value == "Blue" ||
+    //   event.target.value == "Green" ||
+    //   event.target.value == "Yellow" ||
+    //   event.target.value == "Black"
+    // ) {
+    //   this.products = []
+    //   this.Allproducts.forEach(Oneproduct => {
+    //     if (Oneproduct.color.toString() == event.target.value.toString()) {
+    //       this.products.push(Oneproduct)
+    //     }
+    //   })
+    // }
 
     else if(
       event.target.value == "0-10 %" ||
@@ -117,7 +117,7 @@ export class GroceryComponent implements OnInit {
       console.log(event.target.value.toString().split("-")[0])
 
       this.Allproducts.forEach(Oneproduct => {
-        if (Oneproduct.discount > parseInt(valueFirst) && Oneproduct.discount <= parseInt(valueLast)) {
+        if (Oneproduct.discount >= parseInt(valueFirst) && Oneproduct.discount <= parseInt(valueLast)) {
           this.products.push(Oneproduct)
         }
         

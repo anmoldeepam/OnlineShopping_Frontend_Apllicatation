@@ -60,6 +60,9 @@ background-color: green;
 
 .Description{
     font-size: x-small;
+    white-space: nowrap; 
+    overflow: hidden;
+  text-overflow: ellipsis; 
 }
 
 .card-title{

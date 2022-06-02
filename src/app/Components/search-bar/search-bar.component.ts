@@ -39,7 +39,7 @@ export class SearchBarComponent implements OnInit {
       this.username = 'Login'
     }
     else {
-      this.jsonService.getUser(sessionStorage.getItem('userid')).subscribe((user) => {
+      this.jsonService.getUserById(sessionStorage.getItem('userid')).subscribe((user) => {
         this.username = user.userName.split("@")[0]
         this.username = this.username.charAt(0).toUpperCase() + this.username.slice(1)
 
@@ -51,7 +51,12 @@ export class SearchBarComponent implements OnInit {
   }
 
   Login(){
+   if(this.username == "Login"){
     this.router.navigateByUrl('/login')
+   }
+   else {
+    this.router.navigateByUrl('/MyAccount')
+   }
   }
 
   Search(event:any){

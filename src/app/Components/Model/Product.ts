@@ -19,5 +19,6 @@ export interface Product{
     cart:number[]
     color:string
     brand:string
+    address:any
 
 }

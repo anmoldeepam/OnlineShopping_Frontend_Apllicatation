@@ -2,17 +2,18 @@
 <div class="container">
     <div class="row">
         <div class="col-md-2">
-            <div class="imageDiv" *ngFor="let image of product.ExtraImages" ><img class="smallimage"  (click)="ImageReplace(image)" src="{{image}}" style="height:100px;" alt="Image"> </div>
+            <div class="imageDiv" *ngFor="let image of product.ExtraImages"><img class="smallimage"
+                    (click)="ImageReplace(image)" src="{{image}}" style="height:100px;" alt="Image"> </div>
         </div>
         <div class="col-md-4 largeImage">
             <!-- <div *ngFor="let image of product.ExtraImages" ><img src="{{image}}" alt="Image"> </div> -->
             <img class="bigImage" src="{{product.image}}" alt="Image">
             <div class="d-flex justify-content-center">
                 <button class="btn btn-info BuyNowButton">Buy Now</button>
-                <button class="btn btn-danger AddtoCartButton" (click)="AddToCart(product)" >Add To Cart</button>
+                <button class="btn btn-danger AddtoCartButton" (click)="AddToCart(product)">Add To Cart</button>
             </div>
-               
-            
+
+
         </div>
         <div class="col-md-5">
             <!-- <img src="../../../assets/Resourses/Image/T-Shirts/"> -->
@@ -22,7 +23,7 @@
                 <div style="color: green;">Special Price</div>
                 <div class="price">
                     {{offerPrice}}
-                    
+
                 </div>
                 <div class="originalPrice">
                     Original Price is &nbsp; <span
@@ -39,7 +40,8 @@
 
             <div class="size">
                 <h3>Size Available</h3>
-                <button class="productSize" (click)="SelectedSize(size)" *ngFor="let size of productSize" required>{{size}}</button>
+                <button class="productSize" (click)="SelectedSize(size)" *ngFor="let size of productSize"
+                    required>{{size}}</button>
                 <!-- [(ngModel)] = "prodSeleted" (ngModelChange)="selectSize($event, product)" -->
             </div>
             <br><br>
@@ -55,6 +57,52 @@
 
             <br><br><br><br>
 
+         
         </div>
     </div>
+</div>
+   <!-- Button trigger modal -->
+   <button type="button" class="btn btn-primary" id="ModelButton" data-bs-toggle="modal"
+   data-bs-target="#exampleModal" hidden>
+   Launch demo modal
+</button>
+<div  class="loginModel">
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+       aria-hidden="true">
+       <div class="modal-dialog">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h2 class="modal-title" id="exampleModalLabel">Login</h2>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                <form (ngSubmit)="login(myForm)" #myForm="ngForm" >
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address *</label>
+                      <input type="email"
+                       class="form-control" 
+                       name="username" ngModel 
+                       id="exampleInputEmail1"  
+                       aria-describedby="emailHelp"
+                       required
+                       email
+                       >
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password *</label>
+                      <input type="password" 
+                      class="form-control" 
+                      name="password" ngModel 
+                      id="exampleInputPassword1"
+                      required
+                      >
+                    </div>
+                    <button [disabled]="!myForm.valid" type="submit"  class="btn btn-primary">Submit</button>
+                    <button type="button" id="CloseModelButton" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </form>
+               </div>
+           </div>
+       </div>
+   </div>
 </div>

@@ -1,0 +1,119 @@
+<app-search-bar></app-search-bar>
+
+<div class="container">
+<div class="row">
+    <div class="col-3 HelloUser" style="margin-bottom: 20px;">
+
+        <div class="val">
+            <img class="_3X2gOt" height="50px" width="50px" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/profile-pic-male_4811a1.svg">
+            <span style="padding-left: 20px;">Hello  {{user.name}}</span>
+        </div>
+        
+    <div class="leftSetting  ">
+        <img class="_3GARO3" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDI0IDE4Ij48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04LjY5NCAtMTEpIj48ZWxsaXBzZSBjeD0iMjAuNTU3IiBjeT0iMjAiIHJ4PSIyMC41NTciIHJ5PSIyMCIvPjxwYXRoIGZpbGw9IiMyODc0RjEiIGQ9Ik05IDExdjE3LjEwOGMwIC40OTMuNDEuODkyLjkxOC44OTJoNC45M3YtNS4yNTdoLTMuMDMzbDQuOTEyLTQuNzcgNC45NzIgNC44M2gtMy4wMzVWMjloMTIuNDE3Yy41MDcgMCAuOTE4LS40LjkxOC0uODkyVjExSDl6Ii8+PC9nPjwvc3ZnPg==">
+        <span class="MyOrderText" (click)="MYOrders()" >My Orders</span>
+        
+        
+    </div>
+    <div class="leftSetting">
+        <img class="_3GARO3" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMSIgdmlld0JveD0iMCAwIDIyIDIxIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05LjY5NCAtMTApIj48cGF0aCBmaWxsPSIjMjg3NEYwIiBkPSJNMTQuMjc1IDIyLjcwNGMyLjI3Mi0uNDEyIDQuMzQ3LS42MTggNi4yMjUtLjYxOCAxLjg3OCAwIDMuOTUzLjIwNiA2LjIyNS42MThhNS4xNSA1LjE1IDAgMCAxIDQuMjMgNS4wNjhWMzFoLTIwLjkxdi0zLjIyOGE1LjE1IDUuMTUgMCAwIDEgNC4yMy01LjA2OHptMS4yNzQtNy43MjRjMC0yLjU4IDIuMTYzLTQuNjczIDQuODMyLTQuNjczIDIuNjY3IDAgNC44MyAyLjA5MiA0LjgzIDQuNjczIDAgMi41OC0yLjE2MyA0LjY3My00LjgzIDQuNjczLTIuNjcgMC00LjgzMy0yLjA5Mi00LjgzMy00LjY3M3oiLz48ZWxsaXBzZSBjeD0iMjAuNTU3IiBjeT0iMjAiIHJ4PSIyMC41NTciIHJ5PSIyMCIvPjwvZz48L3N2Zz4=">
+        <span class="MyOrderText" (click)="MYAccount()"  >My Account</span>
+    </div>
+    <div class="leftSetting">
+        <svg width="24" height="24" class="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#2874F0" stroke-width="0.3" stroke="#2874F0" d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"></path></svg>
+        <span class="MyOrderText" (click)="Logout()" >Log Out</span>
+    </div>
+    </div>
+    <div>
+        
+    </div>
+    
+        <div class="col-8 RightBox" *ngIf="AccountBoolean" >
+            <h2 style="margin-left: 10px;">Personal Information</h2>
+            <div class="personalInformation">
+    
+                <form [formGroup]="AccountForm" class="AccountInfo">
+                    <div class="mb-3 AccountInput ">
+                      <label for="FirstName" class="form-label d-flex justify-content-center">First Name</label>
+                      <input type="text" class="form-control " formControlName="FirstName" id="FirstName" aria-describedby="emailHelp">
+                     
+                      <label for="Gender" class="form-label d-flex justify-content-center">Gender</label>
+                      <input type="text" class="form-control " formControlName="Gender" id="Gender">
+                    </div>  
+                    <div class="mb-3 AccountInput ">
+                        <label for="Email" class="form-label d-flex justify-content-center">Email</label>
+                        <input type="email" class="form-control " formControlName="Email" id="Email" aria-describedby="emailHelp">
+                       
+                        <label for="Mobile" class="form-label d-flex justify-content-center">Mobile</label>
+                        <input type="text" class="form-control " formControlName="Mobile" id="Mobile">
+                      </div>
+                    
+                  </form>
+                  <p><br><br>
+                    <span style="font-size: large;font-weight: 700;">FAQs</span><br><br>
+                    <span class="FAQ">What happens when I update my email address (or mobile number)?</span><br>
+                    Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).<br><br>
+                    
+                    <span class="FAQ">When will my Flipkart account be updated with the new email address (or mobile number)?</span><br>
+                    It happens as soon as you confirm the verification code sent to your email (or mobile) and save the changes.<br><br>
+                    
+                    <span class="FAQ">What happens to my existing Flipkart account when I update my email address (or mobile number)?</span><br>
+                    Updating your email address (or mobile number) doesn't invalidate your account. Your account remains fully functional. You'll continue seeing your Order history, saved information and personal details.<br><br>
+                    
+                    <span class="FAQ">Does my Seller account get affected when I update my email address?</span><br>
+                    Flipkart has a 'single sign-on' policy. Any changes will reflect in your Seller account also.<br><br>
+                  </p>
+    
+           </div>
+            <div class="d-flex align-items-baseline">
+                <img class="FooterImage d-flex align-items-baseline" src="../../../assets/Account_footer/1.jpg">
+            </div>
+            </div>
+    
+        
+            <div class="col-8 RightBox" *ngIf="OrderBoolean">
+                <!-- <div class="SearBar  ">
+                <input type="text" class="form-control " id="Search" aria-describedby="emailHelp">      
+               <button class="btn btn-primary "> Search</button>
+                </div> -->
+
+                
+
+                <div class="d-flex flex-column mb-3">
+                    <div class="p-2">
+                        <div class="products " *ngFor="let product of products">
+                        <div class="card mb-3" style="max-width: 100%; height: 120px;">
+                            <div class="row g-0 CardValue">
+                              <div class="col-md-2" style="height: 100px; ">
+                                <img src="{{product.image}}" class="img-fluid rounded-start" style="height: 100px; margin-left: 5px;" alt="...">
+                              </div>
+                              <div class="col-md-4 ">
+                                <div class="card-body">
+                                  <p class="card-text">{{product.name}}</p>
+                                  <p class="card-text"><small class="text-muted">Color : {{product.color}}</small></p>
+                                  <p class="card-text"> <small class="text-muted"> Seller :{{product.sellerName}}</small></p>
+                                </div>
+                              </div>
+                              <div class="col-md-2 d-flex align-items-center">
+                                
+                                <p class="card-text">Price : {{product.discountPrice}}</p>
+                              </div>
+                              <div class="col-md-4 RateAndReview d-flex align-items-center">
+                                <a class="RateAndreview" href="/Review">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTYnIGhlaWdodD0nMTknIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTggMTgiPgoJPGcgZmlsbD0nbm9uZSc+CgkJPHBvbHlnb24gaWQ9IlNoYXBlIiBmaWxsPSIjMjg3NEYxIiBwb2ludHM9IjkgMTIuMDYyNSAxMy42Mzc1IDE1LjQzNzUgMTEuODYyNSA5Ljk4NzUgMTYuNSA2LjY4NzUgMTAuODEyNSA2LjY4NzUgOSAxLjA2MjUgNy4xODc1IDYuNjg3NSAxLjUgNi42ODc1IDYuMTM3NSA5Ljk4NzUgNC4zNjI1IDE1LjQzNzUiIC8+CgkJPHBvbHlnb24gaWQ9IlNoYXBlIiBwb2ludHM9IjAgMCAxOCAwIDE4IDE4IDAgMTgiIC8+Cgk8L2c+Cjwvc3ZnPg==" class="_1dki8b col-1-5">
+                                    <span class="rate" style="color: blue;padding-left: 3px;">Rate And Review Product</span>
+                                </a>
+                              </div>
+
+                              </div>
+                          </div>
+                    </div></div>
+                    
+                  </div>
+
+            </div>
+            
+            
+</div>
+
+</div>

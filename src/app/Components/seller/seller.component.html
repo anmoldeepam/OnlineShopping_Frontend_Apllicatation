@@ -18,11 +18,12 @@ Address
                 <div class="card-body">
                   <h5 class="card-title">Anmol Deep</h5>
                   <p class="card-text">
-                      39, Mochi Colony<br>
+                      <!-- 39, Mochi Colony<br>
                       PLD Bank<br>
                       Shimoga Road<br>
                       Harihar<br>
-                      Davangere 577601<br>
+                      Davangere 577601<br> -->
+                      {{product.address}}
                 </p>
                 </div>
               </div>
@@ -37,7 +38,7 @@ Address
                   <div class="col-md-8">
                     <div class="card-body">
                       <h2 class="card-title">{{product.name}}</h2>
-                      <div class="card-text PriceAndsize">Product Price : <span style="font-weight: 700px;color: blue;">{{product.price}}</span></div>
+                      <div class="card-text PriceAndsize">Product Price : <span style="font-weight: 700px;color: blue;">{{product.discountPrice}}</span></div>
                       <div class="card-text PriceAndsize">Product Size Ordered : <span style="font-weight: 700px;color: blue;">{{product.sizeAvailed}}</span></div>
                       <p class="card-text">{{product.details}}</p>
                       <button class="btn btn-info" >Order Sent</button>

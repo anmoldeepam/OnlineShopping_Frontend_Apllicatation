@@ -9,6 +9,7 @@ import { HomeNeededProductComponent } from './Components/home-needed-product/hom
 import { HomeComponent } from './Components/home/home.component';
 import { LoginComponent } from './Components/login/login.component';
 import { MobileComponent } from './Components/mobile/mobile.component';
+import { MyAccountComponent } from './Components/my-account/my-account.component';
 import { OrderPlacedComponent } from './Components/order-placed/order-placed.component';
 import { ReleasedComponent } from './Components/released/released.component';
 import { SearchProductComponent } from './Components/search-product/search-product.component';
@@ -75,6 +76,10 @@ const routes: Routes = [
   {
     path:'homeProducts',
     component:HomeNeededProductComponent
+  },
+  {
+    path:'MyAccount',
+    component:MyAccountComponent
   },
   
 

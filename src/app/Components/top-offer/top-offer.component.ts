@@ -94,7 +94,7 @@ export class TopOfferComponent implements OnInit {
       this.Allproducts.forEach(Oneproduct => {
 
         console.log(Oneproduct.price>parseInt(valueFirst))
-        if (Oneproduct.discountPrice > parseInt(valueFirst) && Oneproduct.discountPrice <= parseInt(valueLast)) {
+        if (Oneproduct.discountPrice >= parseInt(valueFirst) && Oneproduct.discountPrice <= parseInt(valueLast)) {
           this.products.push(Oneproduct)
         }
 
@@ -135,7 +135,7 @@ export class TopOfferComponent implements OnInit {
       console.log(event.target.value.toString().split("-")[0])
 
       this.Allproducts.forEach(Oneproduct => {
-        if (Oneproduct.discount > parseInt(valueFirst) && Oneproduct.discount <= parseInt(valueLast)) {
+        if (Oneproduct.discount >= parseInt(valueFirst) && Oneproduct.discount <= parseInt(valueLast)) {
           this.products.push(Oneproduct)
         }
       })

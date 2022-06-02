@@ -42,7 +42,8 @@ export class SearchProductComponent implements OnInit {
     cart: [],
     color: '',
     brand: '',
-    discountPrice: 0
+    discountPrice: 0,
+    address: undefined
   }
 
   searchName: string = ''
@@ -50,8 +51,13 @@ export class SearchProductComponent implements OnInit {
 
   categoryName: string[] = []
   Allproducts: Product[] = []
+  alljsonProduct:Product[] = []
 
   ngOnInit(): void {
+
+    this.jsonServer.getProducts().subscribe((alljsonProduct:Product[]) =>{
+      this.alljsonProduct = alljsonProduct
+    })
 
     this.searchName = this.route.snapshot.paramMap.get('searchValue') || ''
 
@@ -103,22 +109,25 @@ export class SearchProductComponent implements OnInit {
   }
 
   radio(event: any) {
+    console.log(event.target.value)
     if (event.target.value == "T-Shirt" ||
       event.target.value == "Shirt" ||
       event.target.value == "Mobile" ||
       event.target.value == "Electronics" ||
       event.target.value == "BottomWear" ||
       event.target.value == "Shoes" ||
-      event.target.value == "Sliders") {
+      event.target.value == "Sliders" ||
+      event.target.value == "Home") {
       this.products = []
-      this.Allproducts.forEach(Oneproduct => {
+      
+     this.alljsonProduct.forEach(Oneproduct => {
         this.jsonServer.getCategoryById(Oneproduct.categoryId).subscribe(categoryVal => {
-
           if (categoryVal.name.toLowerCase() == event.target.value.toLowerCase()) {
             this.products.push(Oneproduct)
           }
         })
-      })
+      
+    })
     }
 
     else if (event.target.value == "0-500" ||
@@ -131,7 +140,7 @@ export class SearchProductComponent implements OnInit {
       let valueFirst = event.target.value.toString().split("-")[0]
       let valueLast = event.target.value.toString().split("-")[1]
 
-      this.Allproducts.forEach(Oneproduct => {
+      this.alljsonProduct.forEach(Oneproduct => {
 
         if (Oneproduct.price > parseInt(valueFirst) && Oneproduct.price <= parseInt(valueLast)) {
           this.products.push(Oneproduct)
@@ -148,7 +157,8 @@ export class SearchProductComponent implements OnInit {
       event.target.value == "Black"
     ) {
       this.products = []
-      this.Allproducts.forEach(Oneproduct => {
+      this.alljsonProduct.forEach(Oneproduct => {
+        console.log(Oneproduct)
         if (Oneproduct.color.toString() == event.target.value.toString()) {
           this.products.push(Oneproduct)
         }
@@ -173,11 +183,15 @@ export class SearchProductComponent implements OnInit {
       console.log(event.target.value.toString().split("-")[1])
       console.log(event.target.value.toString().split("-")[0])
 
-      this.Allproducts.forEach(Oneproduct => {
+      this.alljsonProduct.forEach(Oneproduct => {
         if (Oneproduct.discount > parseInt(valueFirst) && Oneproduct.discount <= parseInt(valueLast)) {
           this.products.push(Oneproduct)
         }
+        if(event.target.value == "70 % and Above" && Oneproduct.discount > parseInt(valueFirst) ){
+          this.products.push(Oneproduct)
+        }
       })
+      
     }
   }
 

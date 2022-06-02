@@ -6,6 +6,8 @@ body{
 }
 .cartheading{
     margin-left: 20px;
+    font-size: x-large;
+    padding-right: 150px;
 }
 .card:hover{
     width: 100%;
@@ -29,7 +31,7 @@ body{
     margin-bottom: 8px;
 }
 .card-text{
-    font-size: large;
+    font-size: small;
     
     justify-content: start;
     
@@ -68,4 +70,25 @@ text-align: center;
     font-size: xx-large;
     text-align: center;
     margin-top: 20px;
+}
+.card-title{
+    font-size: medium;
+}
+
+.AddressText{
+    padding-right: 100px;
+}
+
+.cart{
+    margin-top: 20px;
+}
+
+.AddressCard{
+    width: 64.5%;margin-left: 12px; padding-bottom: 20px;padding-left:10px
+}
+
+.AddressCard:hover{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    width: 64.5%;
 }

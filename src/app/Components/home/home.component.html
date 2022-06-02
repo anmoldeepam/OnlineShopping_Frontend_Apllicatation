@@ -45,16 +45,23 @@
   <div class="col">
     
   
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleSlidesOnly" class="carousel slide "  data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../../../assets/Hover_Image/3.jpg" class="d-block w-100" style="height: 200px;" alt="...">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="../../../assets/Hover_Image/2.webp" class="d-block w-100" style="height: 250px;" alt="...">
       </div>
-      <div class="carousel-item">
-        <img src="../../../assets/Hover_Image/2.webp" class="d-block w-100" style="height: 200px;"  alt="IMage">
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../../../assets/Hover_Image/5.jpg" class="d-block w-100" style="height: 250px;"  alt="...">
       </div>
-      <div class="carousel-item">
-        <img src="../../../assets/Hover_Image/1.png" class="d-block w-100" style="height: 200px;"  alt="...">
+    
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../../../assets/Hover_Image/4.jpg" class="d-block w-100" style="height: 250px;"  alt="IMage">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../../../assets/Hover_Image/1.png" class="d-block w-100" style="height: 250px;"  alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../../../assets/Hover_Image/3.jpg" class="d-block w-100" style="height: 250px;"  alt="...">
       </div>
     </div>
   </div>
@@ -80,7 +87,7 @@
           <h5 class="card-title">{{product.name}}</h5>
           <div class="card-text Description">{{product.description}}</div>
           <div class="card-text"><span class="ratings">{{product.reviews}}</span> Ratings</div>
-          <span class="card-text cardPrice"> <span style="font-size: larger;  ">Price : </span>{{product.price}}</span>
+          <span class="card-text cardPrice"> <span style="font-size: larger;  ">Price : </span>{{product.discountPrice}}</span>
           <span style="color: green; padding-left: 15px; font-size: large;">{{product.discount}}% Off</span>
           <!-- <button (click) = "OpenDetailsPage(product.id)" class="btn btn-primary">Details</button>
           <button style="margin-left: 6px;" class="btn btn-warning" (click)="AddtoCart(product)">Add to Cart</button>

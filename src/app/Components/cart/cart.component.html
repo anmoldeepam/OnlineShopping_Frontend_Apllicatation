@@ -5,7 +5,11 @@
 </div>
 
 <div *ngIf="!NoProductFlag" class="container">
-    <h2 class="cartheading">Cart</h2>
+    <div>
+        <span class="cartheading">Cart</span>
+    </div>
+    
+    
 <div  class="cart">
     <div class="products">
     <div *ngFor="let product of products" class="col-md-8">
@@ -30,8 +34,8 @@
                         <select  name="size" [(ngModel)] = "prodSeleted" (ngModelChange)="selectSize($event, product)"  id="productSize">
                             <option  *ngFor="let size of product.size; let i = index" [value]="product.size[i]">{{product.size[i]}}</option>
                         </select> -->
-                       
-                        <div style="font-size: large;margin-bottom: 4px;">Size : {{product.sizeAvailed}}</div>
+                        <div style="font-size: small;margin-bottom: 4px;">Price : {{product.discountPrice}}</div>
+                        <div style="font-size: small;margin-bottom: 4px;">Size : {{product.sizeAvailed}}</div>
                         <button class="productSize" (click)="SelectedSize(size,product)" *ngFor="let size of productSize" required>{{size}}</button>
                     </div>
                     <button class="btn btn-danger" (click)="RemoveItemFromCart(product.id)" style="margin-left: 20px;">Remove</button>
@@ -41,6 +45,7 @@
     </div>
 </div>
 </div>
+
 <div class="cart-total" style="margin-left: 800px; ">
     <div class="PriceDetails">PRICE DETAILS</div>
     <br>
@@ -49,15 +54,15 @@
         <div class="card-body">
           
           <div class="cartPrice">
-            <div class="card-text">Price :</div>
+            <div class="card-text" style="font-size: medium;">Price :</div>
              <span class="pricespan" >{{totalPrice}}</span>
           </div>
           <div class="cartPrice">
-            <div class="card-text">Delivery Charges :</div>
+            <div class="card-text"  style="font-size: medium;" >Delivery Charges :</div>
              <span class="pricespan" >50</span>
           </div>
           <div class="cartPrice">
-            <div class="card-text">Total Amount :</div>
+            <div class="card-text" style="font-size: medium;">Total Amount :</div>
              <span class="pricespan" >{{totalPriceAfterAddingDeliveryCharges}}</span>
           </div>
            <button (click)="PlaceOrder()" class="btn btn-primary d-flex justify-content-center">Place Order</button>
@@ -68,5 +73,69 @@
       Safe and Secure Payments. <br>
       Easy returns.100% Authentic products
 </div>
+
+
+<div class="card mb-3 AddressCard" >
+    <div class="row g-0">
+        <div class="col-md-12">
+<h2>Address</h2>
+<span class="AddressText"> <span style="font-weight: 500;">Deliver address</span> : {{address}}</span>
+       <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#ChangeAddress" (click)="ChangeAddress(user)">Change</button>
+       </div>
+       </div>
+       </div>
 </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="ChangeAddress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <form [formGroup] = "EditAddress" (submit)="SubmitChangeAddress()">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Address</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          
+          
+        </div>
+        <div class="modal-body">
+            <!--  Form -->
+            
+                <div class="mb-3">
+                  <label for="HouseNumber" class="form-label">House No</label>
+                  <input type="text"
+                   class="form-control" 
+                   id="HouseNumber" 
+                   aria-describedby="emailHelp"
+                   formControlName = "HouseNumber"
+                   >
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="Address" class="form-label">Address</label>
+                  <input type="text" 
+                  class="form-control" 
+                  id="Address"
+                  formControlName = "Address"
+                  >
+                </div>
+                <div class="mb-3">
+                    <label for="Pincode" class="form-label">Pincode</label>
+                    <input type="text" 
+                    class="form-control" 
+                    id="Pincode"
+                    formControlName = "Pincode"
+                    >
+                </div>
+              
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary " id="CloseButton" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary" >Save changes</button>
+        </div>
+      </div>
+    </div>
+</form>
+  </div>
+
 
