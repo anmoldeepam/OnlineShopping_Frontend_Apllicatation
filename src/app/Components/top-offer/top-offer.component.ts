@@ -105,7 +105,7 @@ export class TopOfferComponent implements OnInit {
       event.target.value == "Red" ||
       event.target.value == "Blue" ||
       event.target.value == "Green" ||
-      event.target.value == "Yellow" ||
+      event.target.value == "Orange" ||
       event.target.value == "Black"
     ) {
       this.products = []
@@ -136,6 +136,9 @@ export class TopOfferComponent implements OnInit {
 
       this.Allproducts.forEach(Oneproduct => {
         if (Oneproduct.discount >= parseInt(valueFirst) && Oneproduct.discount <= parseInt(valueLast)) {
+          this.products.push(Oneproduct)
+        }
+        if(event.target.value == "70 % and Above"  && Oneproduct.discount >= parseInt(valueFirst) ){
           this.products.push(Oneproduct)
         }
       })

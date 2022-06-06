@@ -21,8 +21,15 @@ img{
 
 .BuyNowButton{
     margin-top: 50px;
-    width: 45%  ;
+    width: 40%  ;
+    border:1px solid black;
 }
+/* .BuyNowButton:focus{
+   background-color: brown;
+} */
+.BuyNowButton:visited{
+    background-color: brown;
+ }
 
 .AddtoCartButton{
     margin-top: 50px;

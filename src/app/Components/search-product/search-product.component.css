@@ -18,6 +18,7 @@
     
 .row{
      align-items: center;
+     
  }
 
  .FilterColor{
@@ -28,8 +29,7 @@
  }
 
  .filterColumn{
-     border: 1px solid grey;
-     padding-left: 15px;
+     
  }
 
 .filterColumn >span{
@@ -55,4 +55,8 @@
      position: relative; 
      margin-top: 0rem;
      margin-left: 0rem;
+}
+.col-2{
+    margin-top: 20px;
+    background-color: aliceblue;
 }

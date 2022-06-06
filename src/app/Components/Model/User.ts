@@ -11,5 +11,6 @@ export interface User {
     address:any[]
     sizeAvailed:string
     orders:Product[]
+    wishlist:number[]
     
 }

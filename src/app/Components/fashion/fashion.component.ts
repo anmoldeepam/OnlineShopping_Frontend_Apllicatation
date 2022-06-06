@@ -87,7 +87,7 @@ export class FashionComponent implements OnInit {
       event.target.value == "Red" ||
       event.target.value == "Blue" ||
       event.target.value == "Green" ||
-      event.target.value == "Yellow" ||
+      event.target.value == "Orange" ||
       event.target.value == "Black"
     ) {
       this.products = []

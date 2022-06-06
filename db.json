@@ -311,6 +311,14 @@
       "password": "Decathlon",
       "products": [],
       "sellerorder": []
+    },
+    {
+      "id": 15,
+      "sellerName": "Nike",
+      "email": "Nike@gmail.com",
+      "password": "Nike",
+      "products": [],
+      "sellerorder": []
     }
   ],
   "User": [
@@ -329,7 +337,8 @@
         "39 Mochi colony Behind PLD Bank Harihar 577601"
       ],
       "sizeAvailed": "",
-      "orders": []
+      "orders": [],
+      "wishlist": []
     },
     {
       "id": 2,
@@ -437,6 +446,10 @@
           "color": "Blue",
           "address": "39 Mochi Colony Behind PLD Bank Harihar Harihar 577601"
         }
+      ],
+      "wishlist": [
+        1,
+        1
       ]
     },
     {
@@ -874,7 +887,7 @@
       "details": "Relish a piping hot bowl of the Maggi Masala instant noodles and savour the taste of its iconic flavour with your friends and family. It contains tasty ingredients and spices to help you rustle up a delicious meal in minutes and satisfy your hunger pangs.",
       "reviews": "4.5",
       "categoryId": "5",
-      "color":""
+      "color": ""
     },
     {
       "id": 18,
@@ -895,7 +908,7 @@
       "details": "Pillsbury Chakki Fresh Atta  (10 kg)",
       "reviews": "4.3",
       "categoryId": "5",
-      "color":""
+      "color": ""
     },
     {
       "id": 19,
@@ -917,7 +930,7 @@
       "details": "Bring out your adventurous side with the Thums Up soft drink. This drink is for those who enjoy an intense combination in an exciting cold drink.      For the Adventurous     If you’re an adventure seeker, Thums Up is the ideal drink for you as it defines the character of a person who loves to live life on the edge.",
       "reviews": "4.4",
       "categoryId": "5",
-      "color":""
+      "color": ""
     },
     {
       "id": 20,
@@ -939,7 +952,7 @@
       "details": " Fortune Rice Bran Health Oil is 100% Physically Refined Rice Bran Oil which is Rich in Gamma Oryzanol. It helps in reducing Bad Cholesterol & increases Good Cholesterol which is beneficial for your heart health. Along with Vitamin A/D/E it is rich in Natural Antioxidants which boosts immunity and gives many other health benefits to every member of the family.",
       "reviews": "4.5",
       "categoryId": "5",
-      "color":""
+      "color": ""
     },
     {
       "id": 21,
@@ -1105,7 +1118,6 @@
         "30",
         "32",
         "34"
-        
       ],
       "sizeAvailed": "",
       "sellerId": 7,
@@ -1136,7 +1148,6 @@
         "32",
         "34",
         "38"
-        
       ],
       "sizeAvailed": "",
       "sellerId": 7,
@@ -1167,7 +1178,6 @@
         "8",
         "9",
         "10"
-        
       ],
       "sizeAvailed": "",
       "sellerId": 1,
@@ -1245,7 +1255,6 @@
         "../../../assets/Resourses/Image/Shoes/Decathlon/2.webp",
         "../../../assets/Resourses/Image/Shoes/Decathlon/3.jpg",
         "../../../assets/Resourses/Image/Shoes/Decathlon/4.jpg"
-        
       ],
       "name": "Newfeel By Decathlon",
       "price": 899,
@@ -1267,6 +1276,125 @@
       "reviews": "4.2",
       "categoryId": "8",
       "color": "Grey"
+    },
+    {
+      "id": 33,
+      "image": "../../../assets/Resourses/Image/Sliders/Puma/1.webp",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Sliders/Puma/1.webp",
+        "../../../assets/Resourses/Image/Sliders/Puma/2.webp",
+        "../../../assets/Resourses/Image/Sliders/Puma/3.webp",
+        "../../../assets/Resourses/Image/Sliders/Puma/4.webp",
+        "../../../assets/Resourses/Image/Sliders/Puma/5.webp"
+      ],
+      "name": "one8 x PUMA",
+      "price": 2499,
+      "discount": 40,
+      "discountPrice": 1499,
+      "description": "Puma Unisex Grey & Black Printed Leadcat FTR Sliders",
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "sizeAvailed": "",
+      "sellerId": 1,
+      "sellerName": "Puma Sports India Pvt LTD",
+      "details": "A pair of grey and black printed sliders Synthetic upper material Cushioned footbed Patterned rubber outsole Warranty: 3 months Warranty provided by brand/manufacturer",
+      "reviews": "4.5",
+      "categoryId": "9",
+      "color": "Grey"
+    },
+    {
+      "id": 34,
+      "image": "../../../assets/Resourses/Image/Sliders/Nike/1.webp",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Sliders/Nike/1.webp",
+        "../../../assets/Resourses/Image/Sliders/Nike/2.webp",
+        "../../../assets/Resourses/Image/Sliders/Nike/3.webp",
+        "../../../assets/Resourses/Image/Sliders/Nike/4.webp",
+        "../../../assets/Resourses/Image/Sliders/Nike/5.webp"
+      ],
+      "name": "Nike",
+      "price": 1995,
+      "discount": 0,
+      "discountPrice": 1995,
+      "description": "Men Black & White Printed Sliders",
+      "size": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "sizeAvailed": "",
+      "sellerId": 15,
+      "sellerName": "Nike",
+      "details": "This pair of flip-flops from Nike is an apt pick this season. The vibrant printed is sure to add more to your look. Team it with a tee and shorts for a laid-back appeal.",
+      "reviews": "4.4",
+      "categoryId": "9",
+      "color": "Black"
+    },
+    {
+      "id": 35,
+      "image": "../../../assets/Resourses/Image/Sliders/RedTape/1.webp",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Sliders/RedTape/1.webp",
+        "../../../assets/Resourses/Image/Sliders/RedTape/2.jpg",
+        "../../../assets/Resourses/Image/Sliders/RedTape/3.jpg",
+        "../../../assets/Resourses/Image/Sliders/RedTape/4.jpg",
+        "../../../assets/Resourses/Image/Sliders/RedTape/5.jpg"
+      ],
+      "name": "Mast & Harbour",
+      "price": 1399,
+      "discount": 60,
+      "discountPrice": 559,
+      "description": "Men Navy Blue & White Striped Detail Sliders",
+      "size": [
+        "6",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "sizeAvailed": "",
+      "sellerId": 11,
+      "sellerName": "OmniTech Retail",
+      "details": "A pair of navy blue, white and mustard yellow striped detail sliders Synthetic upper Cushioned footbed Patterned pvc outsole  Warranty: 1 month",
+      "reviews": "4.2",
+      "categoryId": "9",
+      "color": "Blue"
+    },
+    {
+      "id": 36,
+      "image": "../../../assets/Resourses/Image/Sliders/UCB/1.webp",
+      "ExtraImages": [
+        "../../../assets/Resourses/Image/Sliders/UCB/1.webp",
+        "../../../assets/Resourses/Image/Sliders/UCB/2.webp",
+        "../../../assets/Resourses/Image/Sliders/UCB/3.webp",
+        "../../../assets/Resourses/Image/Sliders/UCB/4.webp",
+        "../../../assets/Resourses/Image/Sliders/UCB/5.webp"
+      ],
+      "name": "United Colors of Benetton",
+      "price": 1799,
+      "discount": 50,
+      "discountPrice": 899,
+      "description": "Men Navy Blue & White Brand Logo Print Sliders",
+      "size": [
+        "6",
+        "8",
+        "9",
+        "10"
+      ],
+      "sizeAvailed": "",
+      "sellerId": 3,
+      "sellerName": "Truenet Commerce",
+      "details": "A pair of navy blue, white and red brand logo print and striped sliders with textured detail Synthetic upper Cushioned footbed Patterned eva outsole Warranty: 3 months Warranty provided by brand owner/manufacturer Warranty not applicable on strap related defects and inconsistencies",
+      "reviews": "3.9",
+      "categoryId": "9",
+      "color": "Red"
     }
   ],
   "category": [
@@ -1301,6 +1429,10 @@
     {
       "id": 8,
       "name": "Shoes"
+    },
+    {
+      "id": 9,
+      "name": "Sliders"
     }
   ],
   "profile": {

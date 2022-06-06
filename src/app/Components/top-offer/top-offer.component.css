@@ -13,28 +13,55 @@
 }
 
 
+ 
+.fullRow{
+    padding-left: 30px;
+}
     
 .row{
      align-items: center;
+     
  }
 
-
  .FilterColor{
-    padding-left:5px ;
-}
-.filterChekbox{
-    padding-left: 10px;
-}
+     padding-left:5px ;
+ }
+ .filterChekbox{
+     padding-left: 10px;
+ }
 
-.filterColumn{
-    border: 1px solid grey;
-    padding-left: 15px;
-}
+ .filterColumn{
+     
+ }
 
 .filterColumn >span{
-   
-   padding-left: 10px;
+    
+    padding-left: 10px;
 } 
+
+.Headings{
+    font-size: medium;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.FilterOptions{
+    font-size: medium; 
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px; 
+    color: blue;
+}
+
+.form-check-input {
+     position: relative; 
+     margin-top: 0rem;
+     margin-left: 0rem;
+}
+.col-2{
+    margin-top: 20px;
+    background-color: aliceblue;
+}
 
 .Headings{
    font-size: medium;

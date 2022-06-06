@@ -76,7 +76,13 @@ export class DetailsComponent implements OnInit {
     brand: '',
     address: undefined
   }
-
+  backgroundColor!: string
+  color!: string
+  AddToCartButton: boolean = false
+  WishListButton: boolean = false
+  toastValue!:string
+  toastValuetrue!:string
+  Wishlist!:string 
 
 
   ngOnInit(): void {
@@ -91,9 +97,18 @@ export class DetailsComponent implements OnInit {
       this.offerPrice = (this.product.price - (this.product.price * (this.product.discount / 100))).toFixed()
 
       this.productSize = product.size
+    })
 
-
-
+    this.jsonServer.getUserById(sessionStorage.getItem('userid')).subscribe(User => {
+      if (User.wishlist.forEach((val: any) => {
+        if (val == this.product.id) {
+          this.backgroundColor = "Black"
+          this.color = "White"
+          this.Wishlist = "Wishlisted"
+        }
+        this.Wishlist = "Wishlist"
+      }))
+      console.log()
     })
   }
 
@@ -107,7 +122,9 @@ export class DetailsComponent implements OnInit {
     this.CartProduct = product
 
     if (sessionStorage.getItem('userid') == null) {
+      this.AddToCartButton = true
       document.getElementById('ModelButton')?.click()
+
     }
     else {
       this._jsonServerService.getUserById(sessionStorage.getItem('userid')).subscribe((user: User) => {
@@ -141,10 +158,20 @@ export class DetailsComponent implements OnInit {
           this._loginService.isSeller.next(false)
           this._loginService.isloggedin.next(true)
           document.getElementById('CloseModelButton')?.click()
-          this.AddToCart(this.CartProduct)
-          
-         
-          break;
+          if (this.AddToCartButton == true) {
+            console.log('In cart')
+            this.AddToCart(this.CartProduct)
+            break;
+
+          }
+          else if (this.WishListButton == true) {
+            console.log('In wish')
+            this.WishList()
+            break;
+          }
+
+
+
 
         }
       }
@@ -189,8 +216,60 @@ export class DetailsComponent implements OnInit {
       alert("User Name or Password is Incorrect ")
     }
 
-    
-  }
 
+  }
+  WishList() {
+    console.log("We Are at Whishlist function")
+
+    if (sessionStorage.getItem('userid') == null) {
+      this.WishListButton = true
+      document.getElementById('ModelButton')?.click()
+
+    }
+    else {
+
+      if (this.backgroundColor == undefined || this.backgroundColor == "White") {
+        this.backgroundColor = "Black"
+        this.color = "White"
+        this.Wishlist = "Wishlisted"
+
+        this.jsonServer.getUserById(sessionStorage.getItem('userid')).subscribe(User => {
+          User.wishlist.push(this.product.id)
+          this.jsonServer.putUser(User).subscribe(putUser => {
+            setTimeout(() => {
+              this.toastValuetrue =""
+            }, 2000);
+            this.toastValuetrue ="show"
+            this.toastValue =""
+          })
+        }
+
+        )
+
+
+      }
+      else {
+
+        this.jsonServer.getUserById(sessionStorage.getItem('userid')).subscribe(User => {
+          
+          User.wishlist.pop()
+          this.jsonServer.putUser(User).subscribe(putUser => {
+            setTimeout(() => {
+              this.toastValue =""
+            }, 2000);
+            this.toastValue ="show"
+            this.toastValuetrue =""
+          })
+
+        this.backgroundColor = "White"
+        this.color = "Black"
+        this.Wishlist = "Wishlist"
+        })
+      }
+
+
+    }
+
+  }
 }
 

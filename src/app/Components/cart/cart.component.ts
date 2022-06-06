@@ -104,9 +104,13 @@ export class CartComponent implements OnInit {
     //   this.user = user
     //   this.cartProduct.userid = user.id
       
-    
+    if(sessionStorage.getItem('userid') == null){
+      this.NoProductFlag = true
+    }
+    else{
 
     if(this.messageService.OrderPlacedFlag== false){
+      
 
     this.jsonServer.getUserById(sessionStorage.getItem('userid')).subscribe((user: User) => {
       this.user = user
@@ -119,8 +123,8 @@ export class CartComponent implements OnInit {
        
       })
       this.cartProduct.userid = user.id
-     // console.log(this.user.cart)
-      if(this.user.cart.length == 0){
+      
+      if(this.user.cart.length == 0 ){
         this.NoProductFlag = true
       }
       
@@ -147,7 +151,7 @@ export class CartComponent implements OnInit {
     this.products=[]
     
   }
-
+    }
   
 }
 

@@ -134,7 +134,7 @@ export class SearchProductComponent implements OnInit {
       event.target.value == "501-1000" ||
       event.target.value == "1001-1500" ||
       event.target.value == "1501-2000" ||
-      event.target.value == "200 & Above") {
+      event.target.value == "2000 & Above") {
 
       this.products = []
       let valueFirst = event.target.value.toString().split("-")[0]
@@ -143,6 +143,8 @@ export class SearchProductComponent implements OnInit {
       this.alljsonProduct.forEach(Oneproduct => {
 
         if (Oneproduct.price > parseInt(valueFirst) && Oneproduct.price <= parseInt(valueLast)) {
+          this.products.push(Oneproduct)
+        }if(event.target.value == "2000 & Above" && Oneproduct.price > parseInt(valueFirst)){
           this.products.push(Oneproduct)
         }
 
