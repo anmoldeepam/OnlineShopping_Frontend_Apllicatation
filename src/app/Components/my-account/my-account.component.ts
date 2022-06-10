@@ -38,6 +38,20 @@ export class MyAccountComponent implements OnInit {
     orders: [],
     wishlist: []
   }
+  CancelUser:User ={
+    id: '',
+    userName: '',
+    userPassword: '',
+    name: '',
+    gender: '',
+    mobilenumber: '',
+    cart: [],
+    address: [],
+    sizeAvailed: '',
+    orders: [],
+    wishlist: []
+  }
+  afterRemovingOrder:Product[]=[]
 
   ngOnInit(): void {
 
@@ -112,6 +126,22 @@ export class MyAccountComponent implements OnInit {
     this.user.wishlist = this.wishprodId
     console.log(this.user)
     this.jsonServer.putUser(this.user).subscribe()
+  }
+
+  CancelOrder(product:Product){
+    // this.jsonServer.getUserById(sessionStorage.getItem('userid')).subscribe(user =>{
+    //   this.CancelUser = user
+    //  user.orders.forEach((prod:any) => {
+    //     if(prod.id != product.id){
+    //       this.afterRemovingOrder.push(prod)
+    //       this.CancelUser.orders = this.afterRemovingOrder
+    //     }
+    //   });
+    // this.jsonServer.putUser(this.CancelUser).subscribe(()=>{
+    // this.MYOrders()
+      // })
+      
+      // })
   }
 
 }

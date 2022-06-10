@@ -135,8 +135,9 @@ export class CartComponent implements OnInit {
         this.jsonServer.getProductById(this.user.cart[i]).subscribe((product) => {
           this.productSize = product.size
          this.products.push(product)
+         console.log(product.id)
           this.cartProduct.products.push(product)
-          this.totalPrice += parseInt((product.price - (product.price*(product.discount/100))).toFixed())
+          this.totalPrice = product.discountPrice
           
           //console.log(product)
         })
@@ -271,10 +272,13 @@ export class CartComponent implements OnInit {
     console.log(this.cartProduct)
     this.cartProduct.products.forEach(product =>{
       console.log(product.sizeAvailed)
-      console.log(product.categoryId == 1 || product.categoryId == 3 && product.sizeAvailed == '')
-      if(product.sizeAvailed == '' && product.categoryId == 1 || product.categoryId == 3 ){
-        alert("Please Select Size")
+      console.log(product.sizeAvailed == ''&& product.categoryId == 1 || product.categoryId == 3 )
+      if( product.sizeAvailed == ''){
+        if(product.categoryId == 1 || product.categoryId == 3 ){
+          alert("Please Select Size")
+        }
         
+
       }
       else{
 

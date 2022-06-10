@@ -101,28 +101,31 @@
           <div class="products " *ngFor="let product of products">
             <div class="card mb-3" style="max-width: 100%; height: 120px;">
               <div class="row g-0 CardValue">
-                <div class="col-md-2" style="height: 100px; ">
+                <div class="col-md-2 CardEachComponent ImageComp" style="height: 100px; ">
                   <img src="{{product.image}}" class="img-fluid rounded-start" style="height: 100px; margin-left: 5px;"
                     alt="...">
                 </div>
-                <div class="col-md-4 ">
+                <div class="col-md-3 ">
                   <div class="card-body">
                     <p class="card-text">{{product.name}}</p>
                     <p class="card-text"><small class="text-muted">Color : {{product.color}}</small></p>
                     <p class="card-text"> <small class="text-muted"> Seller :{{product.sellerName}}</small></p>
                   </div>
                 </div>
-                <div class="col-md-2 d-flex align-items-center">
+                <div class="col-md-2 d-flex align-items-center CardEachComponent">
 
                   <p class="card-text">Price : {{product.discountPrice}}</p>
                 </div>
-                <div class="col-md-4 RateAndReview d-flex align-items-center">
+                <div class="col-md-2 CardEachComponent d-flex align-items-center">
                   <a class="RateAndreview" href="/Review">
                     <img
                       src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTYnIGhlaWdodD0nMTknIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTggMTgiPgoJPGcgZmlsbD0nbm9uZSc+CgkJPHBvbHlnb24gaWQ9IlNoYXBlIiBmaWxsPSIjMjg3NEYxIiBwb2ludHM9IjkgMTIuMDYyNSAxMy42Mzc1IDE1LjQzNzUgMTEuODYyNSA5Ljk4NzUgMTYuNSA2LjY4NzUgMTAuODEyNSA2LjY4NzUgOSAxLjA2MjUgNy4xODc1IDYuNjg3NSAxLjUgNi42ODc1IDYuMTM3NSA5Ljk4NzUgNC4zNjI1IDE1LjQzNzUiIC8+CgkJPHBvbHlnb24gaWQ9IlNoYXBlIiBwb2ludHM9IjAgMCAxOCAwIDE4IDE4IDAgMTgiIC8+Cgk8L2c+Cjwvc3ZnPg=="
                       class="_1dki8b col-1-5">
-                    <span class="rate" style="color: blue;padding-left: 3px;">Rate And Review Product</span>
+                    <span class="rate" style="color: blue;padding-left: 3px;">Rate And Review</span>
                   </a>
+                </div>
+                <div class="col-md-3 CardEachComponent cancelButton d-flex align-items-center" (click)="CancelOrder(product)">
+                 <button type="button" class="btn btn-danger">Cancel Order</button>
                 </div>
 
               </div>

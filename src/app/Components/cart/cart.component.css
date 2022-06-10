@@ -67,9 +67,14 @@ text-align: center;
 }
 
 .NoProduct{
-    font-size: xx-large;
+    font-size: large;
     text-align: center;
     margin-top: 20px;
+
+}
+.NoProduct .img{
+   height: 50px;
+   width: 50px;
 }
 .card-title{
     font-size: medium;

@@ -105,8 +105,10 @@ export class DetailsComponent implements OnInit {
           this.backgroundColor = "Black"
           this.color = "White"
           this.Wishlist = "Wishlisted"
+        }else{
+          this.Wishlist = "Wishlist"
         }
-        this.Wishlist = "Wishlist"
+       
       }))
       console.log()
     })

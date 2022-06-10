@@ -84,6 +84,15 @@
 .RateAndreview{
     text-decoration: none;
 }
+.CardEachComponent{
+    padding: 0;
+}
+.cancelButton{
+    padding-left: 20px;
+}
+.ImageComp{
+    padding-left: 20px;
+}
 
 
 /* 

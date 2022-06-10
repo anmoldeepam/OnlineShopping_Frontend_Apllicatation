@@ -1,7 +1,8 @@
 
 <app-search-bar></app-search-bar>
 <div *ngIf="NoProductFlag" class="NoProduct">
-    There is no Product .. Please Add some
+    <img src="../../../assets/Cart_Empty.jpg" style=" height: 200px;width: 200px;" alt="">
+    <div>Your Cart is Empty</div>
 </div>
 
 <div *ngIf="!NoProductFlag" class="container">

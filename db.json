@@ -167,6 +167,35 @@
           "categoryId": "1",
           "color": "Blue",
           "address": "39 Davangere  577601"
+        },
+        {
+          "id": 4,
+          "image": "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/4ff84b3f-96cc-4e3c-84e2-b6d5d13e06451548320874372-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-3.jpg",
+          "ExtraImages": [
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/271f9b96-3b40-4330-8ce2-b093af796ac11548320874341-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-5.webp",
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/4ff84b3f-96cc-4e3c-84e2-b6d5d13e06451548320874372-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-3.jpg",
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/c9be0d6e-30a4-4242-b4e0-1c166b73f2781548320874402-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-1.webp",
+            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/e4fa716f-3181-4c3b-8f35-0d30fc5ff45d1548320874385-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-2.jpg"
+          ],
+          "name": "HereAndNow TShirt",
+          "price": 580,
+          "discount": 15,
+          "discountPrice": 493,
+          "description": "HERENOW Men Navy Polo Collar Cotton Pure Cotton T-shirt",
+          "size": [
+            "XS",
+            "S",
+            "XL",
+            "XXL"
+          ],
+          "sizeAvailed": "S",
+          "sellerId": 3,
+          "sellerName": "truenet Commerce",
+          "details": "Navy blue solid T-shirt, has a polo collar, short sleeves",
+          "reviews": "3.9",
+          "categoryId": "1",
+          "color": "Blue",
+          "address": "39 mochi colony Davangere  577601"
         }
       ]
     },
@@ -253,6 +282,36 @@
           "categoryId": "3",
           "color": "Green",
           "address": "39 Mochi colony Behind PLD Bank HArihar 577601"
+        },
+        {
+          "id": 10,
+          "image": "../../../assets/Resourses/Image/Shirt/Highlander/1.webp",
+          "ExtraImages": [
+            "../../../assets/Resourses/Image/Shirt/Highlander/1.webp",
+            "../../../assets/Resourses/Image/Shirt/Highlander/2.jpg",
+            "../../../assets/Resourses/Image/Shirt/Highlander/3.webp",
+            "../../../assets/Resourses/Image/Shirt/Highlander/4.webp"
+          ],
+          "name": "HIGHLANDER Shirt",
+          "price": 1049,
+          "discount": 50,
+          "discountPrice": 525,
+          "description": "Men Green & White Slim Fit Printed Casual Shirt",
+          "size": [
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          "sizeAvailed": "40",
+          "sellerId": 7,
+          "sellerName": "FlashStar Commerce",
+          "details": "Green and White printed casual shirt, has a spread collar, short sleeves, button placket, curved hem, and 1 patch pocket",
+          "reviews": "4.2",
+          "categoryId": "3",
+          "color": "Green",
+          "address": "39 mochi colony  PLD Davangere  577601"
         }
       ]
     },
@@ -262,7 +321,37 @@
       "email": "MensaBrand@gmail.com",
       "password": "MensaBrand",
       "products": [],
-      "sellerorder": []
+      "sellerorder": [
+        {
+          "id": 11,
+          "image": "../../../assets/Resourses/Image/Shirt/Dennis Lingo/1.jpg",
+          "ExtraImages": [
+            "../../../assets/Resourses/Image/Shirt/Dennis Lingo/1.jpg",
+            "../../../assets/Resourses/Image/Shirt/Dennis Lingo/2.jpg",
+            "../../../assets/Resourses/Image/Shirt/Dennis Lingo/3.webp",
+            "../../../assets/Resourses/Image/Shirt/Dennis Lingo/4.webp"
+          ],
+          "name": "Dennis Lingo Shirt",
+          "price": 1849,
+          "discount": 63,
+          "discountPrice": 685,
+          "description": "Men Pink Slim Fit Casual Shirt",
+          "size": [
+            "38",
+            "40",
+            "44",
+            "46"
+          ],
+          "sizeAvailed": "44",
+          "sellerId": 8,
+          "sellerName": "Mensa Brand Private Limited",
+          "details": "Pink solid casual shirt, has a spread collar, long sleeves, curved hem, one patch pocket",
+          "reviews": "4.1",
+          "categoryId": "3",
+          "color": "Orange",
+          "address": "39 Davangere  577601"
+        }
+      ]
     },
     {
       "id": 9,
@@ -347,12 +436,10 @@
       "name": "Anmol",
       "gender": "Male",
       "mobilenumber": "1234567890",
-      "cart": [
-        "2"
-      ],
+      "cart": [],
       "address": [
         {
-          "DoorNo": "39",
+          "DoorNo": "39 mochi colony  PLD",
           "Address": "Davangere ",
           "Pincode": "577601"
         }
@@ -360,33 +447,33 @@
       "sizeAvailed": "",
       "orders": [
         {
-          "id": 10,
-          "image": "../../../assets/Resourses/Image/Shirt/Highlander/1.webp",
+          "id": 11,
+          "image": "../../../assets/Resourses/Image/Shirt/Dennis Lingo/1.jpg",
           "ExtraImages": [
-            "../../../assets/Resourses/Image/Shirt/Highlander/1.webp",
-            "../../../assets/Resourses/Image/Shirt/Highlander/2.jpg",
-            "../../../assets/Resourses/Image/Shirt/Highlander/3.webp",
-            "../../../assets/Resourses/Image/Shirt/Highlander/4.webp"
+            "../../../assets/Resourses/Image/Shirt/Dennis Lingo/1.jpg",
+            "../../../assets/Resourses/Image/Shirt/Dennis Lingo/2.jpg",
+            "../../../assets/Resourses/Image/Shirt/Dennis Lingo/3.webp",
+            "../../../assets/Resourses/Image/Shirt/Dennis Lingo/4.webp"
           ],
-          "name": "HIGHLANDER Shirt",
-          "price": 1049,
-          "discount": 50,
-          "discountPrice": 525,
-          "description": "Men Green & White Slim Fit Printed Casual Shirt",
+          "name": "Dennis Lingo Shirt",
+          "price": 1849,
+          "discount": 63,
+          "discountPrice": 685,
+          "description": "Men Pink Slim Fit Casual Shirt",
           "size": [
             "38",
             "40",
-            "42",
             "44",
             "46"
           ],
-          "sizeAvailed": "",
-          "sellerId": 7,
-          "sellerName": "FlashStar Commerce",
-          "details": "Green and White printed casual shirt, has a spread collar, short sleeves, button placket, curved hem, and 1 patch pocket",
-          "reviews": "4.2",
+          "sizeAvailed": "44",
+          "sellerId": 8,
+          "sellerName": "Mensa Brand Private Limited",
+          "details": "Pink solid casual shirt, has a spread collar, long sleeves, curved hem, one patch pocket",
+          "reviews": "4.1",
           "categoryId": "3",
-          "color": "Green"
+          "color": "Orange",
+          "address": "39 Davangere  577601"
         },
         {
           "id": 10,
@@ -415,41 +502,12 @@
           "details": "Green and White printed casual shirt, has a spread collar, short sleeves, button placket, curved hem, and 1 patch pocket",
           "reviews": "4.2",
           "categoryId": "3",
-          "color": "Green"
-        },
-        {
-          "id": 4,
-          "image": "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/4ff84b3f-96cc-4e3c-84e2-b6d5d13e06451548320874372-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-3.jpg",
-          "ExtraImages": [
-            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/271f9b96-3b40-4330-8ce2-b093af796ac11548320874341-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-5.webp",
-            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/4ff84b3f-96cc-4e3c-84e2-b6d5d13e06451548320874372-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-3.jpg",
-            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/c9be0d6e-30a4-4242-b4e0-1c166b73f2781548320874402-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-1.webp",
-            "../../../assets/Resourses/Image/T-Shirts/HereAndNow/Tshirt_1/e4fa716f-3181-4c3b-8f35-0d30fc5ff45d1548320874385-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-2.jpg"
-          ],
-          "name": "HereAndNow TShirt",
-          "price": 580,
-          "discount": 15,
-          "discountPrice": 493,
-          "description": "HERENOW Men Navy Polo Collar Cotton Pure Cotton T-shirt",
-          "size": [
-            "XS",
-            "S",
-            "XL",
-            "XXL"
-          ],
-          "sizeAvailed": "S",
-          "sellerId": 3,
-          "sellerName": "truenet Commerce",
-          "details": "Navy blue solid T-shirt, has a polo collar, short sleeves",
-          "reviews": "3.9",
-          "categoryId": "1",
-          "color": "Blue",
-          "address": "39 Mochi Colony Behind PLD Bank Harihar Harihar 577601"
+          "color": "Green",
+          "address": "39 mochi colony  PLD Davangere  577601"
         }
       ],
       "wishlist": [
-        1,
-        1
+        3
       ]
     },
     {
